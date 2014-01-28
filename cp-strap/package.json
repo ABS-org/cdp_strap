@@ -1,0 +1,26 @@
+{
+  "name": "cp-strap",
+  "version": "0.0.0",
+  "description": "Tema com bootstrap da Comunidade de Práticas",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:ABS-org/cp-strap.git"
+  },
+  "keywords": [
+    "comunidade",
+    "práticas",
+    "abs",
+    "org",
+    "br"
+  ],
+  "author": "Daniel Torres <daniel@updigital.me>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ABS-org/cp-strap/issues"
+  },
+  "homepage": "https://github.com/ABS-org/cp-strap"
+}
