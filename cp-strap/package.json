@@ -20,5 +20,8 @@
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/ABS-org/cp-strap/issues"
+  },
+  "devDependencies": {
+    
   }
 }
