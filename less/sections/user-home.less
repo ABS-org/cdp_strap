@@ -1,0 +1,428 @@
+.page-user {
+
+	font-family: 'Roboto', sans-serif;
+
+	#block-system-main {
+		background: #ffffff; /* Old browsers */
+background: -moz-linear-gradient(top,  #ffffff 0%, #ffffff 64%, #f6f6f6 99%, #ffffff 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(64%,#ffffff), color-stop(99%,#f6f6f6), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #ffffff 0%,#ffffff 64%,#f6f6f6 99%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #ffffff 0%,#ffffff 64%,#f6f6f6 99%,#ffffff 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #ffffff 0%,#ffffff 64%,#f6f6f6 99%,#ffffff 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #ffffff 0%,#ffffff 64%,#f6f6f6 99%,#ffffff 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+border: 1px solid #ddd;
+			border-radius: 4px;
+			margin-bottom: 20px;
+			box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.05);
+		&:hover {
+			background: #ffffff; /* Old browsers */
+background: -moz-linear-gradient(top,  #ffffff 0%, #f6f6f6 1%, #ffffff 36%, #ffffff 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(1%,#f6f6f6), color-stop(36%,#ffffff), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #ffffff 0%,#f6f6f6 1%,#ffffff 36%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #ffffff 0%,#f6f6f6 1%,#ffffff 36%,#ffffff 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #ffffff 0%,#f6f6f6 1%,#ffffff 36%,#ffffff 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #ffffff 0%,#f6f6f6 1%,#ffffff 36%,#ffffff 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+
+			box-shadow: none;
+		}
+		.profile {
+			.user-profile-row1-left {
+				width: 22%;
+				padding: 18px;
+				padding-right: 15px;
+				border-right: 1px solid #fff;
+				box-shadow: 1px 0 0px rgba(0, 0, 0, 0.1);
+				text-align: center;
+				.field-name-field-formacao-profissional {
+					font-size: 0.9em;
+					text-shadow: 1px 1px 0 #fff;
+					color: #777;
+				}
+				.field-name-field-cidade {
+					font-size: 0.9em;
+					text-shadow: 1px 1px 0 #fff;
+					color: #777;
+				}
+				.user-profile-picture {
+					img {
+						margin-left: 20%;
+						width: 130px!important;
+						height: 130px!important;
+
+						.img-circle;
+						margin-bottom: 14px;
+						display: block;
+						background: #f8f8f8;
+						border: 2px solid #eee;
+						padding: 2px;
+						&:hover {
+							padding: 2px;
+							border: 3px solid #ddd;
+						}
+					}
+
+				}
+				.user-profile-links-redes-sociais {
+					width: 70%;
+					margin-left: 15%;
+					a.user-profile-twitter,
+					a.user-profile-lattes,
+					a.user-profile-facebook,
+					a.user-profile-linkedin {
+						text-indent: -9999px;
+						display: block;
+						width: 26px;
+						height: 26px;
+						float: left;
+						margin-right: 8px;
+						margin-top: 8px;
+					}
+					a.user-profile-facebook {
+						background-image: url(../images/icones/facebook.png);
+					}
+					a.user-profile-linkedin {
+						background-image: url(../images/icones/linkedin.png);
+					}
+					a.user-profile-lattes {
+						background-image: url(../images/icones/lattes.png);
+					}
+					a.user-profile-twitter {
+						background-image: url(../images/icones/twitter.png);
+					}
+				}
+			}
+			.user-profile-row1-right {
+				padding: 0 40px 0 40px;
+				#field-bio {
+					color: #666;
+					.field-label {
+						margin-bottom: 10px;
+					}
+				}
+				.flag-abuse-user {
+					// escondendo a flad de reportar
+					// pois não vamos usar nesse momento
+					display: none;
+					/*
+					a {
+						background: #f8f8f8;
+						padding: 6px 10px;
+						border-radius: 4px;
+						border: 1px solid #ddd;
+						float: left;
+						display: block;
+					}
+					*/
+				}
+				#follow {
+					h3 {
+						display: none;
+					}
+					dl {
+						width: auto;
+						height: 36px;
+						dt {
+							/*
+							padding: 6px 15px 6px 0;
+							border-radius: 3px;
+							text-align: center;
+							float: left;
+							margin-right: 10px;
+							cursor: pointer;
+							*/
+
+							display: none;
+						}
+						dd {
+							float: left;
+						}
+						dd a {
+							padding: 6px 15px 6px 0;
+							border-radius: 3px;
+							text-align: center;
+							float: left;
+							color: #fff;
+							background: #1581ca;
+							margin-right: 10px;
+							text-decoration: none!important;
+							border: 1px solid #086baf;
+							text-shadow: 1px 1px 0 #086baf;
+							&:before {
+								font-size: 1.2em;
+								font-family: 'FontAwesome';
+								content: "\f003";
+								color: #dff1fd;
+								margin-right: 12px;
+								border-right: 1px solid #086baf;
+								padding: 9px 10px 9px 10px;
+								border-radius: 3px 0 0 3px;
+							}
+							&:hover {
+								&:before {
+									color: #fff;
+									background: #086baf;
+									text-shadow: none;
+								}
+								background: #1f8dd5;
+								box-shadow: inset 0 0 6px #086baf;
+							}
+						}
+						dt:first-child {
+							background: #fc0;
+							color: #fff;
+							text-shadow: 1px 1px 0 #eab12b;
+							border: 1px solid #eab12b;
+							font-weight: normal;
+							&:before {
+								font-size: 1.2em;
+								font-family: 'FontAwesome';
+								content: "\f061";
+								color: #fdf5df;
+								margin-right: 12px;
+								border-right: 1px solid #eab12b;
+								padding: 9px 10px 9px 10px;
+								border-radius: 3px 0 0 3px;
+							}
+							&:hover {
+								&:before {
+									color: #fff;
+									background: #eab12b;
+									text-shadow: none;
+								}
+								background: #fbcf5c;
+								box-shadow: inset 0 0 6px #eab12b;
+							}
+						}
+					}
+				}
+
+				// vampo especial que muda de acordo com a associação entre os usuários
+				// nesse caso se são amigos ou não
+				#group-group {
+
+					.field-name-group-group{
+						height: 36px;
+						margin-top: 15px;
+						margin-bottom: 20px;
+
+						// link de adicioanr amigos
+						a.add-friend{
+							height: 39px;
+							padding: 6px 15px 6px 0;
+							border-radius: 3px;
+							text-align: center;
+							float: left;
+							color: #fff;
+							background: #1581ca;
+							margin-right: 10px;
+							text-decoration: none!important;
+							border: 1px solid #086baf;
+							text-shadow: 1px 1px 0 #086baf;
+							&:before {
+								font-size: 1.2em;
+								font-family: 'FontAwesome';
+								content: "\f003";
+								color: #dff1fd;
+								margin-right: 12px;
+								border-right: 1px solid #086baf;
+								padding: 9px 10px 9px 10px;
+								border-radius: 3px 0 0 3px;
+							}
+
+							&:hover {
+								&:before {
+									color: #fff;
+									background: #086baf;
+									text-shadow: none;
+								}
+								background: #1f8dd5;
+								box-shadow: inset 0 0 6px #086baf;
+							}
+						}
+						// link de enviar mensagens
+						a.send-message{
+							height: 39px;
+							padding: 6px 15px 6px 0;
+							border-radius: 3px;
+							text-align: center;
+							float: left;
+							color: #fff;
+							background: #1581ca;
+							margin-right: 10px;
+							text-decoration: none!important;
+							border: 1px solid #086baf;
+							text-shadow: 1px 1px 0 #086baf;
+							&:before {
+								font-size: 1.2em;
+								font-family: 'FontAwesome';
+								content: "\f003";
+								color: #dff1fd;
+								margin-right: 12px;
+								border-right: 1px solid #086baf;
+								padding: 9px 10px 9px 10px;
+								border-radius: 3px 0 0 3px;
+							}
+
+							&:hover {
+								&:before {
+									color: #fff;
+									background: #086baf;
+									text-shadow: none;
+								}
+								background: #1f8dd5;
+								box-shadow: inset 0 0 6px #086baf;
+							}
+						}
+					}
+				}
+
+			}
+		}
+
+	}
+	#block-views-6284cd50dbadf07d41f24330ac6c166a,
+	#block-views-4a1a47a0203ddfad93e1ff49963faae9,
+	#block-views-7d442d86cde2419be9015c7bca6e2dcf,
+	#block-views-cdp-user-current-block {
+		background: #fff;
+		border: 1px solid #ddd;
+		border-radius: 4px;
+		margin-right: 20px;
+		margin-bottom: 18px;
+		.block-title {
+			min-height: 30px!important;
+			overflow: visible!important;
+			border-radius: 3px 3px 0 0!important;
+			text-shadow: 1px 1px 0 #fff;
+			background-color: #e2e5e7!important;
+			border: none!important;
+			border-bottom: 1px solid #eee!important;
+			margin-left: 0;
+			color: #1581ca;
+			font-size: 0.9em!important;
+		}
+		.view-content {
+			.views-row {
+				min-height: 70px ;
+				overflow: hidden;
+				padding: 6px 16px 12px 16px;
+				border-bottom: 1px solid #eee!important;
+				margin-top: 0;
+				.views-field-field-group-logo {
+					margin-right: 8px;
+					float: left;
+				}
+				.field-content {
+					float: right;
+					width: 80%;
+				}
+			}
+			.views-row-even {
+				background: #f9f9f9!important;
+				margin-top: 0!important;
+			}
+		}
+	}
+	#block-views-6284cd50dbadf07d41f24330ac6c166a {
+		.block-title {
+			background-image: url(../images/icones/icon-mostra.png);
+			background-repeat: no-repeat;
+			background-position: 10px 9px!important;
+		}
+		.views-row {
+			min-height: 40px !important;
+		}
+
+	}
+	#block-views-4a1a47a0203ddfad93e1ff49963faae9 {
+		.block-title {
+			background-image: url(../images/icones/icon-comunidades.png)!important;
+			background-repeat: no-repeat;
+			background-position: 10px 10px!important;
+		}
+
+		.view-content {
+			max-height: 270px;
+			overflow-y: scroll;
+		}
+	}
+	#block-views-7d442d86cde2419be9015c7bca6e2dcf {
+		.block-title {
+			background-image: url(../images/icones/block-sobre-curso.png)!important;
+			background-repeat: no-repeat;
+			background-position: 10px 10px!important;
+		}
+		.view-content {
+			.views-row {
+				max-height: 270px;
+				overflow-y: scroll;
+				.views-field-field-course-logo {
+					.field-content {
+						width: 15%!important;
+						float: left!important;
+					}
+				}
+			}
+		}
+	}
+	#block-views-cdp-user-current-block {
+		.block-title {
+			background-image: url(../images/icones/icon-pessoas.png)!important;
+			background-repeat: no-repeat;
+			background-position: 10px 10px!important;
+		}
+		.view-content {
+			.views-row {
+				.views-field-field-course-logo {
+					.field-content {
+						width: 15%!important;
+						float: left!important;
+					}
+				}
+			}
+		}
+	}
+
+	#after-content-right {
+		.panel-body {
+			padding: 0!important;
+		}
+		#block-quicktabs-cdp-user-profile-timeline {
+
+			#quicktabs-container-cdp_user_profile_timeline {
+				border: none!important;
+				padding: 0!important;
+			}
+			.quicktabs-tabs {
+			}
+			.title-time-line {
+				width: 100%;
+				margin-left: 22px;
+				background-image: url(../images/icones/icon-timeline.png);
+				background-repeat: no-repeat;
+				background-position: 0 0px;
+				padding-left: 50px;
+				padding-top: 4px;
+				height: 46px!important;
+			}
+			.views-row {
+				padding: 0!important;
+				box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.1);
+					background: #fff;
+					border-bottom: 1px solid #ddd;
+					padding: 0 10px 20px 18px!important;
+					margin-bottom: -10px!important;
+				.node {
+					background: transparent!important;
+					border: none!important;
+					padding: 0!important;
+					margin: 0!important;
+				}
+			}
+		}
+	}
+
+}
+

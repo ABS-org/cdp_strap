@@ -1,0 +1,169 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('../fonts/icons-fontawesome/fontawesome-webfont.eot');
+  src: url('../fonts/icons-fontawesome/fontawesome-webfont.eot') format('embedded-opentype'), url('../fonts/icons-fontawesome/fontawesome-webfont.woff') format('woff'), url('../fonts/icons-fontawesome/fontawesome-webfont.ttf') format('truetype'), url('../fonts/icons-fontawesome/fontawesome-webfont.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+// Media query variables.
+@mobile:  ~"(max-width: 767px)";
+@tablet:  ~"(min-width: 768px) and (max-width: 979px)";
+@normal:  ~"(min-width: 980px) and (max-width: 1199px)";
+@wide:    ~"(min-width: 1200px)";
+
+// Bootstrap library.
+@import '../bootstrap/less/bootstrap.less';
+//@import 'bootstrap/responsive.less';
+
+@import 'mixins.less';
+
+// Base-theme overrides.
+@import 'overrides.less';
+
+//ckeditor fix and styles
+@import 'ckeditor.less';
+
+// estile em formato css
+@import 'style_css.less';
+
+// css com estilos e ajustes para todos os formulários
+@import 'forms_all.less';
+
+// rate
+@import 'vote_rate_love.less';
+
+@import 'painels.less';
+
+// @import 'block_sharebox.less';
+
+// Theme specific.
+@import 'sidebar.less';
+@import 'content.less';
+@import 'footer.less';
+
+// share box with node forms, quicktabs and views
+@import 'commons_bw.less';
+
+// content styles
+@import 'courses_sidebar.less';
+
+@import 'page_front.less';
+
+@import 'node/node.less';
+
+@import 'node/node_category.less';
+@import 'node/node_imagem.less';
+@import 'node/node_video.less';
+@import 'node/node_quiz.less';
+@import 'node/node_post_image.less';
+@import 'node/node_relato_curadoria.less';
+@import 'node/node_relatos_dab.less';
+
+@import 'node/node_group.less';
+
+// user profile style
+@import 'user_profile.less';
+
+@import 'block_sharebox.less';
+
+
+
+
+
+//
+// cdp-ABS Theme v.0.0.0
+// Este é o tema do atencaobasica.org.br
+//
+// Arquivo principal: style.less
+// tem a função de conter todos os arquivos importados, na ordem correta.
+//
+
+
+// CORE
+//
+// ==========================================================================
+
+
+// INCLUDES
+//
+// Este diretório contém arquivos que geralmente se repetem nas páginas.
+// ==========================================================================
+
+// Inclui todos os estilos de breadcrumb e tudo relacionado à breadcrumb.
+@import 'includes/breadcrumb.less';
+// Inclui todos os arquivos sobre comentários.
+@import 'includes/comments.less';
+// Menu vertical (dos círculos coloridos)
+@import 'includes/menu-vertical.less';
+// ------------------------------------------
+
+// Header (subdiretório)
+// Inclui todas as partes que estão no topo da página.
+//
+// Header -> base
+@import 'includes/header/base.less';
+// Header -> barra-brasil
+@import 'includes/header/barra-brasil.less';
+// Header -> menu-main
+@import 'includes/header/menu-main.less';
+// ------------------------------------------
+
+
+// WIDGETS
+//
+// Este diretório contém os estilos dos widgets;
+// ==========================================================================
+
+// Base of all widgets
+@import 'widgets/base.less';
+// Sidebar com blocos de usuário
+@import 'widgets/user-sidebar.less';
+// Modal Init
+@import 'widgets/modal.less';
+
+
+
+// SECTIONS
+//
+// Este diretório contém os estilos das seções, ex: cursos, home, comunidades;
+// ==========================================================================
+
+// Estilos da seção de usuário/edit
+@import 'sections/user-edit.less';
+// Estilos da seção de Mensagens
+@import 'sections/messages.less';
+// Estilos da seção de cursos/
+@import 'sections/courses.less';
+// Estilos da seção de Comunidades Aba Relatos
+@import 'sections/search-relatos.less';
+// Estilos da seção de Listagem de Usuários
+@import 'sections/search-pessoas.less';
+// Estilos da seção de Listagem Geral
+@import 'sections/search-geral.less';
+// Estilos da seção de pessoas/
+@import 'sections/pessoas.less';
+// Estilos da seção de Créditos
+@import 'sections/credits.less';
+// SOLR and site search
+@import 'sections/search.less';
+// Seção de Atividades
+@import 'sections/activities.less';
+// User front page
+@import 'sections/user-front.less';
+// User Home page
+@import 'sections/user-home.less';
+// Seção Comunidades
+@import 'sections/comunidades.less';
+// Seção Quiz
+@import 'sections/quiz.less';
+// Seção IV Mstra
+@import 'sections/mostra.less';
+// Seção WebTV
+@import 'sections/webtv.less';
+// Seção de Manutenção
+@import 'sections/maintenance.less';
+
+

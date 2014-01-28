@@ -1,0 +1,281 @@
+
+/**
+ * @file
+ * CSS para o tipo de conteúdo relato dos profissionais do DAB relato_de_experi_ncia_dab_curado
+ */
+
+body.node-type-relato-de-experi-ncia-dab-curado {
+  h1.page-header {
+    display: none;
+  }
+
+  .cabecalho {
+
+    .submitted {
+      margin: 0px;
+      .field-name-og-group-ref {
+        font-size: 15px;
+        font-weight: bold;
+        margin: 3px 0px;
+        font-style: normal;
+      }
+    }
+    .autores-relato-atores-experiencia {
+      float: right;
+      color: #fff;
+      background: #02669d url(/sites/all/themes/dab_origins/images/icons/icone-seta-baixo-azul.jpg) no-repeat right;
+      padding: 9px 30px 9px 15px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      -o-border-radius: 5px;
+      border-radius: 5px;
+    }
+  }
+
+  .destacado {
+
+    color: #fff;
+    background-color: @nodeDescriptionBackground;
+    margin: 15px 0px 5px 0px;
+    overflow: hidden;
+
+    .field-name-field-imagem-de-destaque {
+      width: 48%;
+      float: left;
+      padding: 0px 25px 0px 0px;
+      line-height: 0px;
+
+      img {
+        height: auto;
+        max-width: 100%;
+      }
+    }
+
+    a {
+      color: #fff;
+    }
+
+    h2 {
+      font-size: 25px;
+      font-weight: bold;
+      padding: 15px;
+
+    }
+
+    .field-name-field-descricao {
+      font-size: 14px;
+      padding: 5px 10px;
+    }
+
+    header {
+
+    }
+  }
+  .dados-da-experiencia {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    .dados-da-experiencia-header {
+
+      margin-bottom: 30px;
+      padding-bottom: 15px;
+      min-height: 47px;
+      background: url('../images/icones/dados_experiencia.png') no-repeat 20px top;
+      border-bottom: 1px solid @mainAreaBorder;
+
+      h3.dados-da-experiencia-subject {
+        font-size: 20px;
+        color: @nodeDescriptionBackground;
+        margin: 0px;
+        font-weight: bold;
+      }
+
+      h3.dados-da-experiencia-subject,
+      .field-name-field-cidade {
+         padding-left: 65px;
+      }
+
+      .field-name-field-cidade {
+      }
+
+    }
+
+    .esquerda,
+    .direita {
+      .field {
+        margin-left: 35px;
+        padding-left: 35px;
+        margin-bottom: 10px;
+        background: url('../images/icones/link.png') no-repeat left center;
+      }
+    }
+
+    .esquerda {
+
+    }
+
+    .direita {
+
+    }
+
+
+
+  }
+
+  .content {
+    border-top: 1px solid @mainAreaBorder;
+    padding: 25px 0px;
+    .make-row();
+
+    .group-segunda-etapa {
+      .make-md-column(8);
+      border-right: 1px solid @mainAreaBorder;
+
+      .field {
+        border-bottom: 1px solid @mainAreaBorder;
+
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+
+        .field-label {
+          font-size: 16px;
+          margin-bottom: 20px;
+          color: @nodeDescriptionBackground;
+        }
+      }
+    }
+
+    .group-terceira-etapa {
+      .make-md-column(4);
+
+      .group-experiencia-autores,
+      .group-experiencia-atores {
+        h3 {
+          font-size: 16px;
+          font-weight: bold;
+          border-bottom: 2px solid @mainAreaBorder;
+          padding-bottom: 10px;
+          margin-bottom: 0px;
+        }
+      }
+
+      .field-name-field-experiencia-anexo {
+        border-bottom: 1px solid @mainAreaBorder;
+        border-top: 1px solid @mainAreaBorder;
+        margin-bottom: 10px;
+
+        .field-label {
+           color: @nodeDescriptionBackground;
+           font-size: 18px;
+           padding: 10px 5px 10px 30px;
+           margin-bottom: 10px;
+           background: url('../images/icones/anexo.png') no-repeat left center;
+        }
+
+        .field-items {
+          margin-bottom: 15px;
+        }
+      }
+
+      .field-type-fivestar {
+        .field-label {
+          color: @nodeDescriptionBackground;
+          font-size: 18px;
+          margin-top: 15px;
+          margin-bottom: 10px;
+        }
+
+        .fivestar-widget {
+          .cancel {
+            width: 27px;
+            height: 27px;
+            margin-left: 5px;
+          }
+
+          .star {
+            width: 27px;
+            height: 27px;
+            margin-left: 5px;
+            a {
+              background: url("../images/icones/relatos-vote-star.gif") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+            }
+          }
+
+          .fivestar-summary {
+            font-weight: bold;
+          }
+        }
+
+        .field-items {
+          margin-bottom: 10px;
+        }
+      }
+    }
+
+    .field-name-field-video,
+    .field-name-field-imagem {
+      .make-md-column(12);
+    }
+
+
+    .field-name-field-video {
+      margin-bottom: 30px;
+
+      .field-label {
+        font-size: 20px;
+        color: @nodeDescriptionBackground;
+        margin: 25px 0px;
+        padding: 25px 0px 25px 50px;
+
+        border-bottom: 1px solid @mainAreaBorder;
+        border-top: 1px solid @mainAreaBorder;
+
+        font-weight: bold;
+        background: url('../images/icones/galeria_video.png') no-repeat left center;
+      }
+
+      .field-items {
+        .make-row();
+        .field-item{
+          .make-md-column(6);
+        }
+
+      }
+
+    }
+
+    .field-name-field-imagem {
+      margin-bottom: 30px;
+
+      .field-label {
+        font-size: 20px;
+        color: @nodeDescriptionBackground;
+        margin: 25px 0px;
+        padding: 25px 0px 25px 50px;
+
+        border-bottom: 1px solid @mainAreaBorder;
+        border-top: 1px solid @mainAreaBorder;
+
+        font-weight: bold;
+        background: url('../images/icones/galeria_video.png') no-repeat left center;
+      }
+
+      .field-items {
+        .make-row();
+        .field-item{
+          .make-md-column(4);
+
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+
+      }
+
+    }
+
+  }
+
+}

@@ -1,0 +1,158 @@
+
+// Body of credits page
+body.page-creditos {
+	background: url(../images/front/bgPattern.png);
+	font-family: 'Roboto', sans-serif;
+	.page-header {
+		width: 60%;
+		margin-left: 20%;
+		text-align: center;
+		margin-top: 30px; // Fix top margin if 'cadastrase-home' block is hide.
+		border-bottom: none;
+		font-size: 1.9em;
+		color: #5f5f5f;
+	}
+}
+
+// Section: credits
+.credits {
+	.team-group {
+		margin: 20px 0 0 0;
+    padding: 0;
+    list-style: none;
+    display: block;
+    text-align: center;
+    width: 100%;
+    .team-group-list-item {
+	    width: 208px;
+	    height: 208px;
+	    display: inline-block;
+	    margin: 20px 4% 20px 2%;
+	    background: #fff;
+	    padding: 6px;
+	    border: 3px solid #ddd;
+	    .img-circle;
+	    .team-member-name {
+	    	width: 100%;
+	    	height: 26px;
+	    	overflow: hidden;
+	    	text-align: center;
+				font-size: 1.5em;
+				color: #5f5f5f;
+			}
+			.team-member-role {
+	    	width: 100%;
+	    	height: 80px;
+	    	font-size: italic;
+	    	overflow: hidden;
+	    	text-align: center;
+				font-size: 1em;
+				color: #5f5f5f;
+			}
+    }
+    .team-group-list-item-blue {
+    	&:hover {
+	    	border: 3px solid #015b80;
+	    }
+    }
+    .team-group-list-item-yellow {
+    	&:hover {
+	    	border: 3px solid #efc849;
+	    }
+    }
+    .team-group-list-item-red {
+    	&:hover {
+	    	border: 3px solid #e05b4a;
+	    }
+    }
+    .team-group-list-item-green {
+    	&:hover {
+	    	border: 3px solid #5cb944;
+	    }
+    }
+		.team-member-item {
+			width: 190px;
+	    height: 190px;
+	    .img-circle;
+	    overflow: hidden;
+	    position: relative;
+	    cursor: default;
+	    transition: all 0.3s ease-in-out;
+	    &:hover {
+				.team-member-info {
+					transform: scale(1);
+			    opacity: 1;
+			    .team-member-description {
+			    	opacity: 1;
+			    }
+				}
+	    }
+		  .team-member-info-blue {
+		  	background: #015b80;
+		  }
+		  .team-member-info-yellow {
+		  	background: #efc849;
+		  }
+		  .team-member-info-red {
+		  	background: #e05b4a;
+		  }
+		  .team-member-info-green {
+		  	background: #5cb944;
+		  }
+		  
+			.team-member-info {
+				position: absolute;
+		    width: inherit;
+		    height: inherit;
+		    border-radius: 50%;
+		    overflow: hidden;
+		    opacity: 0;
+		    transition: all 0.3s ease-in-out;
+		    transform: scale(0);
+		    .team-member-description {
+		    	text-align: center;
+		    	color: #fff;
+			    padding: 10px 5px;
+			    position: relative;
+			    top: 30px;
+			    font-style: italic;
+			    line-height: 1.2em;
+			    font-weight: 100;
+			    margin: 0 10px;
+			    font-size: 0.95em;
+			    opacity: 0;
+			    transition: all 0.3s ease-in-out 0.4s;
+		    }
+			}
+		}
+		.team-member-1 { 
+	    background-image: url(../images/members/felipe-cavalcanti.png);
+		}
+		.team-member-2 { 
+	    background-image: url(../images/members/alberto-souza.png);
+		}
+		.team-member-3 { 
+	    background-image: url(../images/members/daniel-torres.png);
+		}
+		.team-member-4 { 
+	    background-image: url(../images/members/thiago-petra.png);
+		}
+		.team-member-5 { 
+	    background-image: url(../images/members/sabrina-ferigatto.png);
+		}
+		.team-member-6 { 
+	    background-image: url(../images/members/aline-corso.png);
+		}
+		.team-member-7 { 
+	    background-image: url(../images/members/savio-marques.png);
+		}
+	}
+	.team-group:after {
+    clear: both;
+	}
+	.team-group:after,
+	.team-member-item:before {
+    content: '';
+    display: table;
+	}
+}

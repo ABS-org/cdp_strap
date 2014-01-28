@@ -1,0 +1,88 @@
+#block-dab-project-dab-sharebox,
+.pane-dab-project-dab-sharebox {
+  padding: 0px;
+  margin: 0px 0px 90px 0px;
+  background-color: transparent;
+  border: 0px;
+}
+
+#block-dab-project-dab-sharebox {
+  margin-top: 10px;
+}
+
+.sharebox_area {
+  .sharebox_forms_header {
+    li {
+      font-weight: bold;
+    }
+  }
+
+  .sharebox_forms {
+    padding: 18px;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+
+    .sharebox_form {
+
+      background: #F7F7F7;
+
+      display: none;
+
+      a.expandable-form-toggle {
+        margin-bottom: 5px;
+      }
+
+      h3 {
+        display: none;
+      }
+
+      form {
+        padding-bottom: 50px;
+        border: 0px;
+
+        & > div > button.form-submit {
+          float: right;
+        }
+      }
+
+      .user-picture {
+        display: none;
+      }
+
+      .field-name-body{
+        margin-bottom: 10px;
+      }
+      .node {
+        border-top: 0px;
+        background: transparent;
+      }
+
+      &.active {
+        display: block;
+      }
+
+      a.full-form {
+        display: none;
+      }
+    }
+  }
+
+  .sharebox_forms_footer {
+    margin-top: -68px;
+    margin-left: 30px;
+
+    .question_actions {
+      display: none;
+    }
+  }
+
+  &.question .sharebox_forms_footer {
+    .post_actions {
+      display: none;
+    }
+
+    .question_actions {
+      display: block;
+    }
+  }
+}

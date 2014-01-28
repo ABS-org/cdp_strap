@@ -1,0 +1,30 @@
+{
+  "name": "cdp-theme",
+  "description": "Drupal theme to atencaobasica.org.br",
+  "version": "0.0.5",
+  "keywords": [
+    "cdp",
+    "theme",
+    "org",
+    "br"
+  ],
+  "homepage": "https://github.com/cdp-ABS/cdp-theme",
+  "author": "cdp-ABS",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cdp-ABS/cdp-theme.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cdp-ABS/cdp-theme/issues"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-banner": "~0.2.0",
+    "grunt-contrib-less": "~0.8.3",
+    "grunt-contrib-watch": "~0.5.3",
+    "load-grunt-tasks": "~0.2.1"
+  }
+}

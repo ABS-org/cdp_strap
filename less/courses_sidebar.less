@@ -1,0 +1,289 @@
+.block-cdp-courses {
+
+  h2.block-title {
+    display: none;
+  }
+
+  ul.bs-sidenav {
+    a {
+      border-left: 6px solid transparent;
+      padding-left: 2px;
+      color: @black;
+      margin-left: -5px;
+
+      &.active {
+        border-color: @blueDark;
+      }
+    }
+
+    li.category,
+    li.depth-0 {
+      font-weight: bold;
+      font-size: 15px;
+
+      a {
+        padding-left: 4px;
+      }
+
+      ul {
+        font-weight: normal;
+      }
+    }
+
+    li.unidade{
+      a.unidade{
+        padding-left: 45px;
+        min-height: 40px;
+        color: @blue;
+        font-size: 14px;
+        font-weight: bold;
+        vertical-align: middle;
+        background: url('../images/demais/unidade.png') no-repeat 3px  center;
+        border-bottom: dashed 1px @mainAreaBorder;
+        &:hover {
+          background-color: @grayLighter;
+        }
+      }
+
+      margin-bottom: 10px;
+    }
+
+    li.depth-1,
+    li.depth-2,
+    li.depth-3 {
+
+      font-size: 14px;
+    }
+
+  }
+}
+
+
+#block-cdp-courses-course {
+  padding: 0px;
+  img {
+    width: 100%;
+    height: auto;
+    padding: 0px;
+  }
+
+  .course-title {
+    margin-top: -50px;
+    margin-bottom: 0px;
+    position: relative;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px;
+    color: #fff;
+    background: #6DCF82;
+  }
+}
+
+#block-cdp-courses-course-organizers,
+#block-views-course-users-block {
+
+  background: transparent;
+  border: none;
+  .block-title {
+    display: block;
+    font-size: 20px;
+    color: #999;
+    padding-left: 40px;
+    min-height: 40px;
+    border-bottom: solid 3px @mainAreaBorder;
+    background: url('../images/demais/pessoas.png') no-repeat 0px 50%;
+  }
+  .users-pictures,
+  .views-row {
+    img {
+      .img-circle;
+      margin: 2px;
+      width: 50px;
+      height: 50px;
+      float: left;
+    }
+  }
+}
+.course-nav-top {
+
+  .course-nav-top-item {
+    padding: 5px 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: @grayLight;
+    border-bottom: 1px solid @mainAreaBorder;
+    &.course-novidades {
+      border-top: 1px solid @mainAreaBorder;
+    }
+  }
+
+  .course-nav {
+    font-weight: bold;
+    li {
+
+    }
+    a {
+      padding: 3px 10px;
+
+    }
+  }
+
+}
+
+// @TODO passar para .less
+#block-cdp-courses-course-new {
+  padding: 0px;
+  .btn {
+    border-color: #54b79e;
+    background: #459b85 url('../images/block-sobre-curso.png') no-repeat center 10px;
+    position: relative;
+    padding: 125px 10px 10px 10px;
+  }
+
+  .btn:hover {
+    background-color: #49a18c;
+  }
+
+  .btn .texto {
+    display: inline-block;
+    color: #459b85;
+    background: #6dcf81;
+    padding: 3px 6px;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 5px;
+  }
+
+  .btn .icon-circle {
+    display: inline-block;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    line-height: 1em;
+    border-radius: 30px;
+    font-style: 14px;
+    padding: 5px;
+    background: #6dcf81;
+    color: #459b85;
+    box-sizing: border-box;
+    width: 26px;
+  }
+}
+
+#cdp-courses-oc-table{
+  background: #fff;
+  border: 1px solid #ddd;
+}
+
+.page-courses-biblioteca {
+
+  h1.page-header {
+    .course-page-titles ('../images/icones/biblioteca_icone.png');
+  }
+}
+
+.view-cdp-biblioteca-do-curso {
+  .view-filters {
+    display: table;
+    width: 100%;
+    border: 1px dashed @mainAreaBorder;
+    background-color: @mainAreaBackground;
+    .rounded-corners(6px);
+
+    .views-exposed-widgets {
+      float: right;
+
+      .views-widget-filter-title {
+
+      }
+    }
+  }
+
+  .view-content{
+    clear: both;
+    .clearfix();
+  }
+  .views-row {
+    margin-top: 15px;
+    text-align: center;
+
+   .biblioteca-content{
+      color: #000;
+      display: block;
+      text-decoration: none;
+      padding: 10px;
+      margin-top: 10px;
+      margin-bottom: 15px;
+      width: 180px;
+      height: 270px;
+      background-color: #F5F5F5;
+      border: 1px solid @mainAreaBorder;
+      overflow: hidden;
+
+      .views-field-type {
+        width: 100px;
+        height: 100px;
+        background: url('../images/demais/biblioteca_outros.png') no-repeat  center;
+        color: #2A86C5;
+        margin: 0px auto;
+        span {
+          display: none;
+        }
+
+        &.video {
+          background: url('../images/demais/biblioteca-video.png') no-repeat  center;
+        }
+
+        &.texto_html {
+          background: url('../images/demais/biblioteca-text_html.png') no-repeat  center;
+        }
+
+        &.imagem {
+          background: url('../images/demais/biblioteca-imagem.png') no-repeat  center;
+        }
+
+      }
+
+      .views-field-created {
+        margin-top: 10px;
+        font-size: 12px;
+      }
+
+      .views-field-title {
+        font-size: 16px;
+        font-weight: bold;
+        height: 90px;
+        overflow: hidden;
+      }
+
+      .views-field-view-node {
+        .field-content {
+          a {
+            height: 20px;
+            width: 70px;
+            display: block;
+            background-color: #479B84;
+            margin: 5px auto;
+            color: #fff;
+            font-weight: bold;
+            font-size: 16px;
+            border-radius: 5px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.panel-display.two-33-66 {
+  .make-row();
+  .region-two-33-66-first {
+    .make-md-column(4);
+  }
+  .region-two-33-66-second {
+    .make-md-column(8);
+  }
+
+}
+

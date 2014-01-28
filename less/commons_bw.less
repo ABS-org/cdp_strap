@@ -1,0 +1,112 @@
+#block-quicktabs-cdp-group-activity,
+.cdp-timeline-painel{
+  border: 0px;
+  background-color: transparent;
+  padding: 0px;
+
+  & > h2 {
+    display: none;
+  }
+}
+
+#quicktabs-container-cdp_timeline,
+#quicktabs-container-cdp_group_activity {
+  border: 1px solid #e0e0e0;
+}
+
+#quicktabs-cdp_timeline,
+#quicktabs-cdp_group_activity,
+#quicktabs-commons_bw {
+
+  form.commons-bw-partial-node-form {
+    h3 {
+      color: #999;
+      font-size: 16px;
+      font-weight: bold;
+
+    }
+
+    div.field-name-body {
+      padding-left: 60px;
+
+      textarea {
+        width: 100%;
+      }
+    }
+  }
+
+  .view-content {
+    .views-row {
+      .node {
+        padding: 10px 0px;
+        border-bottom: 1px solid #ccc;
+      }
+    }
+  }
+
+  form.compact-form {
+    textarea {
+      height: 60px;
+    }
+  }
+
+  .full-form {
+    margin-right: 15px;
+  }
+
+  .quicktabs-tabs.quicktabs-style-basic,
+  .quicktabs-tabs.quicktabs-style-commons-pills {
+    .nav;
+    .nav-tabs;
+    min-height: 45px;
+    margin-bottom: -5px;
+
+    li {
+      border: 1px solid @mainAreaBorder;
+      border-bottom-color: transparent;
+
+
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+
+      z-index: 10;
+
+      a {
+        font:  14px @sansFontFamily !important;
+        padding-left: 5px;
+        padding-right: 5px;
+
+        &.active {
+          border: none;
+        }
+
+        &:hover {
+          border: none;
+        }
+
+        .commons-bw-result-count {
+          .badge;
+        }
+      }
+    }
+
+    li.active{
+      border-bottom: 1px solid #fff;
+
+
+      a:after {
+        border: none;
+      }
+      a {
+        &.active {
+          border: none;
+        }
+
+        &:hover {
+          border: none;
+        }
+      }
+    }
+  }
+
+}
