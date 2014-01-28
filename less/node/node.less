@@ -1,0 +1,379 @@
+
+.node-question,
+.node-post {
+  h2 {
+    display: none;
+  }
+}
+
+.node {
+
+    &.node-video h2{
+      .node-title-default('../images/demais/galeria_video.png');
+    }
+
+    &.node-imagem h2{
+      .node-title-default('../images/demais/galeria_imagem.png');
+    }
+
+    &.node-texto-html h2{
+      .node-title-default('../images/icones/texto-html.png');
+    }
+
+    &.node-category h2{
+      .node-title-default('../images/icones/category.png');
+      a {
+        color: #000;
+      }
+    }
+
+  .submitted {
+
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+    min-height: 55px;
+
+    img {
+      .img-circle;
+      width: 50px;
+      height: 50px;
+      margin-right: 4px;
+      margin-bottom: 4px;
+    }
+  }
+
+  background-color: @mainAreaBackground;
+  border: 1px solid @mainAreaBorder;
+  padding: 10px;
+
+  .user-picture {
+    float: left;
+    padding: 0px 6px 5px 0px;
+  }
+  div.content,
+  .links,
+  #comments{
+    .clearfix();
+  }
+
+  .field-name-field-tags {
+    padding-left: 55px;
+    min-height: 40px;
+    background: url('../images/demais/etiqueta.png') no-repeat left center;
+    float: left;
+    margin: 5px 15px 5px 0px;
+
+    .field-item{
+      //float: left;
+      display: inline;
+      margin: 5px ;
+      font-size: 25px;
+    }
+  }
+
+
+  .submitted,
+  .content {
+    margin: 10px 10px;
+  }
+
+  .course-next-previus-content {
+    border-top: 1px dashed @mainAreaBorder;
+    border-bottom: 1px dashed @mainAreaBorder;
+
+    padding: 10px 0px;
+
+    .course-content-previus {
+
+    }
+
+    .course-content-next {
+      text-align: right;
+    }
+  }
+
+
+  .node-links-container {
+    min-height: 42px;
+    ul.links {
+      display: block;
+      float: left;
+      min-height: 42px;
+    }
+  }
+
+  .links.list-inline {
+    a {
+
+    }
+    li.rate_love,
+    li.sharethis,
+    li.flag-inappropriate_node,
+    li.flag-commons_follow_group {
+      display: block;
+      float: left;
+      a {
+        .btn;
+        .btn-default;
+      }
+    }
+  }
+}
+
+.node-teaser {
+  margin-bottom: 10px;
+
+  .field-type-image {
+    float: left;
+    margin: 0px 6px 5px 0px
+  }
+
+  div.content {
+    padding-bottom: 3px;
+    margin-bottom: 15px;
+  }
+}
+
+.node-teaser {
+
+  // node promovido
+  &.node-promoted {
+    background: url('../images/32/estrela-amarela.png') 0px 0px no-repeat;
+  }
+
+  h2 {
+    font-size: 18px;
+    font-weight: bold;
+    a {
+      color: #000;
+
+      &:hover {
+        color: @linkColorHover;
+      }
+    }
+
+  }
+
+  &.unidade {
+    h2 {
+      background: inherit;
+      padding: 0px;
+      margin: 0px;
+      border-bottom: none;
+      color: #fff;
+
+      a {
+        color: #fff;
+      }
+    }
+  }
+
+  &.node-quiz h2{
+    .node-title-default('../images/icones/quiz_icone.png');
+    a {
+      color: #B5452F;
+    }
+  }
+
+
+  &.node-document h2{
+    .node-title-default('../images/icones/document_icone.png');
+    a {
+      color: #8155AA;
+    }
+  }
+
+  &.node-group {
+
+    > h2 {
+      display: none;
+    }
+    .field-name-title-field {
+      h2 {
+        margin-top: 0px;
+        font-size: 22px;
+        a {
+          color: @blueDark;
+        }
+      }
+    }
+
+    .field-name-body {
+      //border-bottom: 1px solid #eee;
+    }
+
+    .field-name-group-group,
+    .node-readmore,
+    .field-name-field-topics {
+      display: none !important;
+    }
+
+
+
+  }
+
+  &.node-experiencia {
+    .field-type-image{
+      img {
+        width: 160px;
+        height: 145px;
+        margin: 0px 5px 6px 0px;
+        .img-circle;
+      }
+    }
+
+    .field-type-text-long {
+      font-size: 16px;
+    }
+
+    > h2 {
+      display: none;
+    }
+    .field-name-title-field {
+      h2 {
+        margin-top: 0px;
+        font-size: 22px;
+        a {
+          color: @blueDark;
+        }
+      }
+    }
+  }
+
+
+  .content {
+    margin-bottom: 10px;
+  }
+
+  .field-name-field-imagem {
+    .thumbnail;
+  }
+
+ .links.list-inline {
+    padding-left: 5px;
+    padding-right: 5px;
+    min-height: 39px;
+    margin: 0px;
+
+    a {
+
+    }
+    &>li {
+      display: block;
+      float: left;
+      a {
+        .btn;
+        .btn-default;
+        .btn-sm;
+      }
+    }
+
+    .node-readmore {
+      a {
+        .btn-primary;
+        color: #fff!important;
+      }
+    }
+
+    .comment-new-comments {
+      a {
+        .btn-warning;
+      }
+    }
+ }
+
+ .field-name-field-topics {
+   display: block;
+   .field-label {
+     color: #999;
+   }
+
+   .field-label,
+   .field-items {
+     display: inline;
+   }
+
+   .field-item {
+     display: inline;
+     margin-right: 10px;
+   }
+ }
+
+ .field-name-field-group-logo{
+    img{
+      width: 150px;
+      height: 140px;
+    }
+
+ }
+
+  .rate-widget-love {
+    position: inherit;
+    float: none;
+  }
+
+  .node-links-container {
+    ul.links {
+      float: right;
+    }
+  }
+
+  .rate-widget-commons_like {
+    display: none;
+  }
+}
+
+
+.sharethis-buttons {
+    position: relative;
+    color: #323232;
+    border-color: #CBCBCB;
+   font-size: 0.88em;
+}
+
+.sharethis-buttons:before {
+    background: url("../images/icones/compartilhar.png") no-repeat;
+    content: "";
+    display: inline-block;
+    height:40px;
+    width: 52px;
+    margin-right: 3px;
+    position: relative;
+    top: 1px;
+}
+.sharethis-wrapper {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #46BA31;
+    border-radius: 6px;
+    bottom: 140%;
+    display: none;
+    left: 0;
+    margin-bottom: 10px;
+    padding: 10px 8px 3px;
+    position: absolute;
+    white-space: nowrap;
+    min-height: 46px;
+    z-index: 5;
+}
+.sharethis-wrapper:before, .sharethis-wrapper:after {
+    border-color: rgba(0, 0, 0, 0);
+    border-style: solid;
+    content: "";
+    height: 0;
+    position: absolute;
+    top: 100%;
+    width: 0;
+}
+.sharethis-wrapper:before {
+    border-top-color: #46BA31;
+    border-width: 6px 6px 0;
+    left: 30px;
+}
+.sharethis-wrapper:after {
+    border-top-color: #FFFFFF;
+    border-width: 5.5px 5.5px 0;
+    left: 31px;
+}
+.sharethis-buttons:hover .sharethis-wrapper {
+    display: block;
+}

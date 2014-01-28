@@ -1,0 +1,97 @@
+.form-control {
+  height: auto;
+}
+
+form.compact-form {
+  textarea {
+    height: 40px;
+  }
+}
+
+.media-widget.form-control {
+  height: auto;
+  margin: 10px;
+
+  a.button {
+    margin: 3px;
+    .btn;
+    &.launcher {
+       .btn-success;
+    }
+    &.edit {
+       .btn-primary;
+    }
+    &.remove {
+       .btn-danger;
+    }
+  }
+}
+
+.expandable-form{
+  &.compact-form {
+    .field-type-image{
+      display: none;
+    }
+  }
+
+  &.expanded-form {
+      display: block;
+  }
+
+}
+
+#block-system-main {
+  .vertical-tabs {
+
+    margin-bottom: 15px;
+    .make-row();
+
+    .vertical-tabs-list {
+      .nav;
+      .nav-pills;
+      .nav-stacked;
+      .make-lg-column(4);
+
+      border-bottom: transparent;
+
+      li {
+        a {
+          border: 1px solid #dddddd;
+          border-right-color: transparent;
+        }
+      }
+    }
+
+    .vertical-tabs-panes {
+      .make-lg-column(8);
+    }
+
+  }
+}
+
+.help-block,
+.control-group .help-inline {
+  margin-top: 5px;
+}
+
+form.node-form {
+
+  background-color: #fff;
+  padding: 5px 15px;
+  border-left: 1px solid @mainAreaBorder;
+  border-right: 1px solid @mainAreaBorder;
+  border-bottom: 1px solid @mainAreaBorder;
+}
+
+.radio input[type="radio"],
+.radio-inline input[type="radio"],
+.checkbox input[type="checkbox"],
+.checkbox-inline input[type="checkbox"] {
+    float: none;
+}
+
+.file-widget {
+  input.form-file {
+    margin: 5px 0 15px;
+  }
+}

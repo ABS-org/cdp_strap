@@ -1,0 +1,97 @@
+.comment-wrapper {
+  padding: 10px;
+
+  h2.title {
+    font-size: 20px;
+    line-height: 38px;
+
+    color: @nodeDescriptionBackground;
+    margin: 25px 0px;
+    padding: 25px 0px 25px 50px;
+
+    border-bottom: 1px solid @mainAreaBorder;
+    border-top: 1px solid @mainAreaBorder;
+
+    font-weight: bold;
+    background: url('../images/icones/comentario.png') no-repeat left center;
+
+  }
+
+  .comment {
+    .content {
+      margin-top: 0px;
+      margin-left: 5px;
+      margin-right: 5px;
+      border-top: none;
+    }
+  }
+
+  .indented {
+    padding-left: 60px;
+    background: url('../images/icones/indent-comentario.png') no-repeat 5px center;
+  }
+
+  #edit-notify-type {
+
+    margin: 15px 0px;
+  }
+}
+
+
+.comment {
+  margin: 15px 0px;
+  padding: 5px;
+  background-color: @bodyBackground;
+
+  .submitted {
+    min-height: inherit;
+    margin-bottom: 0px;
+  }
+
+  h3.comment-title {
+    display: none;
+  }
+
+  .content {
+    margin-top: 0px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-top: none;
+
+    .field-name-body {
+      margin-bottom: 20px;
+    }
+  }
+
+}
+
+.links {
+  margin-top: 15px;
+
+  .comment-edit,
+  .comment-delete,
+  .comment-reply,
+  .comment-add {
+    a {
+      .btn;
+      .btn-default;
+      padding: 8px 12px;
+    }
+  }
+
+  .comment-delete {
+    a {
+      .btn-danger;
+    }
+  }
+
+  .comment-reply {
+    a {
+      .btn-primary;
+    }
+  }
+
+  .comment-add {
+
+  }
+}

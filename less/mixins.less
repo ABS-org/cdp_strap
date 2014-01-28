@@ -1,0 +1,98 @@
+.rounded-corners (@radius: @baseBorderRadius) {
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+  -ms-border-radius: @radius;
+  -o-border-radius: @radius;
+  border-radius: @radius;
+}
+
+.opacity (@opacity: 0.8) {
+    @opacityPercentage: @opacity * 100;
+    opacity: @opacity;
+    -ms-filter: ~"progid:DXImageTransform.Microsoft.Alpha(opacity=(@{opacityPercentage}))";
+    filter: ~"alpha(opacity = (@{opacityPercentage}))";
+}
+
+.block-style {
+  padding: 8px;
+  margin: 0px 0px 15px 0px ;
+  background-color: @mainAreaBackground;
+  border: 1px solid @mainAreaBorder;
+  .border-radius(5px);
+}
+
+.block-title {
+  border-bottom: 1px solid #E0E0E0;
+  color: #999999;
+  font-weight: bold;
+  padding: 5px 15px;
+  text-transform: uppercase;
+  font-size: 14px;
+  width: 100%;
+  margin: 5px;
+}
+
+.node-title-default(@icone: '../images/icones/default_icone.png') {
+  font-size: 18px;
+  font-weight: bold;
+  background: url(@icone) no-repeat left center;
+  padding: 15px 0px 15px 45px;
+  margin: 0px 0px 10px 0px;
+  border-bottom: 1px dashed @mainAreaBorder;
+
+  color: #206496;
+
+  a{
+    color: #206496;
+  }
+}
+
+.course-page-titles (@icone: '../images/icones/biblioteca_icone.png'){
+  font-size: 18px;
+  font-weight: bold;
+  background: url(@icone) no-repeat left center;
+  padding: 15px 0px 15px 50px;
+  margin-bottom: 10px;
+
+  h1 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0px;
+  }
+  .course-title {
+    font-size: 14px;
+    font-weight: normal;
+  }
+}
+
+.btn-users {
+  background: #0088cc;
+  color: #ffffff;
+  font-size: 11px;
+  height: 37px;
+  margin-left: 4px;
+  margin-right: 4px;
+  &:hover {
+    color: #ffffff;
+    background: #1073a7;
+  }
+}
+
+.multistep-user-li(@icone: '../images/icones/icon-multistep-user-edit.png' , @cor: #7fbc37){
+  a {
+    > .multstep-user-prefix {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-image: url(@icone);
+      border-color: @cor;
+    }
+
+    &.current-step,
+    &:hover {
+      > .multstep-user-prefix {
+        background-color: @cor;
+        border-color: #ccc;
+      }
+    }
+  }
+}

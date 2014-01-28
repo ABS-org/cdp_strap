@@ -1,0 +1,100 @@
+body.node-type-quiz {
+  #main-content-area {
+    .node-quiz {
+      background-color: transparent;
+      border: none;
+      
+      h2 {
+        .node-title-default( '../images/icones/quiz_icone.png' );
+        color: #B5452F;
+      }      
+    }
+
+    .form-item-tries-answer {
+
+    }
+
+    .multichoice_row {
+      .radio input[type="radio"] {
+        margin-left: 0px;
+      }
+    }
+
+    #quiz-question-answering-form {
+
+      em {
+        padding: 10px 5px;
+        display: block;
+        font-size: 14px;
+        .text-warning;
+      }
+
+      #edit-submit {
+        .btn-danger;
+      }
+    }
+  }
+}
+
+
+body.node-type-quiz  .form-item-tries.form-group,
+body.node-type-quiz  .form-item-tries-answer.form-group,
+body.node-type-quiz  .quiz-question-body,
+body.node-type-quiz  .field-name-body,
+.node-quiz.node-teaser  .field-name-body,
+#quiz-question-answering-form em,
+#quiz-view-table {
+
+  font-size: 18px;
+  margin: 20px 0;
+  padding: 20px;
+  width: 100%;
+  background-color: @mainAreaBackground;
+  border: 1px solid @mainAreaBorder;
+  .border-radius(5px);
+
+  td {
+    margin: 5px;
+    line-height: 29px;
+  }
+}
+
+#quiz-start-quiz-button-form {
+  text-align: center;
+
+  .form-submit {
+    font-weight: bold;
+    .btn-danger;
+    .btn-lg;
+  }
+
+}
+
+.node-quiz.node-teaser {
+
+}
+
+div.quiz-report {
+  .quiz-report-question {
+    font-size: 16px;
+  }
+
+  .dt div.quiz-report-score-container {
+    min-height: 110px;
+    /*
+    &.q-correct {
+      padding-left: 40px !important;
+      background: url('../images/quiz/quiz-verdade-02.png') no-repeat left center;
+
+
+    }
+
+    &.q-wrong {
+      padding-left: 40px !important;
+      background: url('../images/quiz/quiz-mito-02.png') no-repeat left center;
+    }
+    */
+  }
+
+}
+

@@ -1,0 +1,170 @@
+.main-menu-actions-block {
+  .aba-pessoas {
+    background: #e1e1e1;
+    margin: -1px 0 0 20px;
+  }
+}
+
+#navbar {
+  background: #ffffff; /* Old browsers */
+background: -moz-linear-gradient(top,  #ffffff 41%, #f3f3f3 84%, #ededed 98%, #ffffff 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(41%,#ffffff), color-stop(84%,#f3f3f3), color-stop(98%,#ededed), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #ffffff 41%,#f3f3f3 84%,#ededed 98%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #ffffff 41%,#f3f3f3 84%,#ededed 98%,#ffffff 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #ffffff 41%,#f3f3f3 84%,#ededed 98%,#ffffff 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #ffffff 41%,#f3f3f3 84%,#ededed 98%,#ffffff 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+
+  border: none;
+  margin: 0px;
+  .logo {
+    z-index: 110;
+    width: 130px;
+    height: 60px;
+    margin-top: 0px;
+
+    img {
+      position: absolute;
+    }
+  }
+}
+
+.user-search-container {
+  button {
+    font-size: 13px;
+    line-height: inherit;
+  }
+}
+
+.region-main-search,
+.region-user-menu {
+  margin: 10px 5px;
+}
+
+.region-main-search {
+  float: left;
+  #block-search-form{
+    margin-left: 20px;
+    .search-form {
+      .form-item-custom-search-types {
+        display: none;
+      }
+      .input-group,
+      .custom-search-box {
+        width: 160px;
+        height: 31px;
+        background-position: 170px 10px;
+      }
+    }
+  }
+}
+
+
+@media @normal, @wide {
+  .region-main-search {
+    #block-search-form{
+      .search-form {    
+        .custom-search-box {
+          width: 190px;
+          height: 31px;
+        }
+      }
+    }
+  }
+}
+
+.region-user-menu {
+  float: right;
+  margin-right: 0;
+  width: 320px;
+  .views-field-picture {
+    float: left;
+    margin-right: 2px;
+    img {
+      .border-radius(17px);
+    }
+  }
+}
+
+#barraCores {
+  background: #e1e1e1 url(../images/front/barracores.jpg) no-repeat center;
+  height:7px;
+}
+
+
+.region-user-menu {
+  #block-user-login {
+    h2 {
+      display: none;
+    }
+
+    #user-login-form {
+      width: 320px;
+      height: 48px;
+      .form-inline;
+
+      .form-item {
+
+      }
+
+      label {
+        display: none;
+      }
+
+      input {
+        width: 125px;
+      }
+
+      button.form-submit {
+        float: right;
+        .btn-primary;
+      }
+
+      ul {
+        width: 270px;
+        position: absolute;
+        padding: 0px;
+        margin-top: 4px;
+        li {
+          list-style: none;
+          float: left;
+          a {
+            margin-right: 25px;
+          }
+        }
+      }
+    }
+
+  }
+}
+
+.view-dab-theme-user {
+  .views-row-first {
+    margin-top: 0px;
+  }
+}
+
+
+/* Cadastra-se */
+#cadastrase {
+  height: 130px;
+  background: #334d5c;
+  width: @frontPageWidth;
+  z-index: 100;
+  border-bottom: 8px #e1e1e1 solid;
+  top: 105px;
+
+  .conteudoCadastro { width:860px; margin:0 auto; }
+  .conteudoCadastro img { padding-top:15px;}
+
+  .textoCadastro { width:200px;  float:right;}
+  .fecharbt { width:32px; float:right; }
+
+  #textoCadastro { color:#FFF; margin:0; padding:0;}
+  .tituloCadastro {margin:13px 0 15px 0; padding:0; font-size:24px; letter-spacing:3px; height:13px; color:#FFF; }
+  .textodocadastro { font-size:12px; margin:10px 0 5px 0; width:300px; height:20px; color:#FFF; padding-bottom:0; line-height:16px; }
+  .iconesdasRedes {padding:5px 0 0 0;}
+  .iconesSociais { margin:0 0 0 20px;  }
+  .primeiro { margin:0;}
+
+}

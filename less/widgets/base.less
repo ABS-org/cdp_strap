@@ -1,0 +1,74 @@
+// ==========================================================================
+// BASE of Widgets
+//
+// If you code is not contained in a specific object, you are likely to
+// want put this here. This file is for the general rules of all widgets.
+// ==========================================================================
+
+
+//
+// Expandable blocks
+//
+// Some components have the behavior of contracting and
+// expanding, and are controlled by the display property.
+// -------------------------------------------------------------
+
+@blue: #1c2939;
+
+body.user-block-expandable-hide {
+  .region-user-side-block {
+    section.block {
+      display: none;
+    }
+
+    section.block.user-sidebar-title-show-blocks,
+    #block-views-b5cf0fb8edf44e1c6a8214906b106d18 {
+      display: block;
+    }
+
+    .glyphicon-user-block {
+      color: #fff;
+      float: right;
+      .glyphicon-circle-arrow-down;
+    }
+
+  }
+}
+
+body.user-block-expandable-show {
+
+  .region-user-side-block {
+    section.block {
+      display: block;
+    }
+
+    section.block.user-sidebar-title-show-blocks,
+    #block-views-b5cf0fb8edf44e1c6a8214906b106d18 {
+      display: none;
+    }
+
+    .hide-show-btn-container {
+      display: none;
+    }
+    .glyphicon-user-block {
+      color: #fff;
+      float: right;
+      .glyphicon-circle-arrow-up;
+    }
+  }
+
+
+}
+
+.region-user-side-block {
+
+  #block-views-b5cf0fb8edf44e1c6a8214906b106d18,
+  #block-views-cdp-user-user-current-menu {
+    display: none;
+  }
+}
+
+// Other
+.region-sidebar-first {
+  margin: 20px 20px 0 0;
+}

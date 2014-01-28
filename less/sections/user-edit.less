@@ -1,0 +1,92 @@
+.page-user-edit {
+
+	#main-content-area {
+		.tabs--primary {
+			display: none;
+		}
+		.panel-heading {
+			border: 1px solid #ddd;
+		}
+
+		.highlighted {
+			.region-highlighted {
+				#block-cdp-multistep-user-cdp-multistep-user {
+					.block-title {
+						margin-left: -6%;
+						width: 112%!important;
+						margin-bottom: -27px;
+						margin-top: 30px;
+						text-indent: -9999999px;
+					}
+					ol {
+						li {
+							float: left;
+							margin-bottom: 30px;
+							list-style: none;
+							width: 20%;
+
+							a {
+								display: block;
+								//margin-top: 50px;
+								width: 100%;
+
+								// default e posição
+								.multstep-user-prefix,
+								.multstep-user-link {
+									display: block;
+
+								}
+								.multstep-user-prefix {
+									height: 50px;
+									width: 50px;
+									border: 2px solid #ccc;
+									background: #fff;
+									margin: 1px auto;
+
+									border-radius: 50%;
+									background-color: #aaa;
+
+								}
+
+								.multstep-user-link{
+									margin-top: 5px;
+									width: 100%;
+									text-align: center;
+								}
+							}
+
+							a.current-step {
+								font-weight: bold;
+							}
+
+							// customizado para cada item do menu
+						  &.group_profile_account_li {
+								.multistep-user-li('../images/icones/icon-multistep-user-edit.png', #7fbc37);
+							}
+							&.group_profile_foto_li {
+								.multistep-user-li('../images/icones/icon-multistep-user-picture.png', #1681c4);
+							}
+							&.group_profile_contato_li {
+								.multistep-user-li('../images/icones/icon-multistep-user-contacts.png', #f7c130);
+							}
+							&.group_profile_trabalho_li {
+								.multistep-user-li('../images/icones/icon-multistep-user-work.png', #7fbc37);
+							}
+							&.group_profile_ensine_aprenda_li {
+								.multistep-user-li('../images/icones/icon-multistep-user-learn.png', #dd151d);
+							}
+
+							&.group_profile_friends_li {
+								.multistep-user-li('../images/icones/icon-multistep-user-friends.png', #8a50bf);
+							}
+
+						}
+					}
+				}
+			}
+		}
+
+		#edit-account {
+		}
+	}
+}
