@@ -23,6 +23,7 @@
   },
   "devDependencies": {
     "grunt": "~0.4.2",
-    "load-grunt-tasks": "~0.3.0"
+    "load-grunt-tasks": "~0.3.0",
+    "grunt-banner": "~0.2.0"
   }
 }
