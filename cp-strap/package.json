@@ -22,6 +22,6 @@
     "url": "https://github.com/ABS-org/cp-strap/issues"
   },
   "devDependencies": {
-    
+    "grunt": "~0.4.2"
   }
 }
