@@ -10,4 +10,8 @@ module.exports = function (grunt) {
 
   });
 
+
+  // Load multiple grunt tasks using globbing patterns
+  require('load-grunt-tasks')(grunt, {scope: 'devDependencies'});
+
 };
