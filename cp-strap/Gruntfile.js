@@ -14,6 +14,12 @@ module.exports = function (grunt) {
     // Metadata
     pkg: grunt.file.readJSON('package.json')
 
+    // Banner task
+     banner: '/*!\n' +
+              ' * cp-strap theme v<%= pkg.version %>\n' +
+              ' * License MIT <%= grunt.template.today("yyyy") %> ABS-org\n' +
+              ' */\n',
+
   });
 
 
