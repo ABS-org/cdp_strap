@@ -14849,6 +14849,10 @@ body.page-atividades #main-content-area .view-content .views-row-last {
 .page-user #block-views-6284cd50dbadf07d41f24330ac6c166a .views-row {
   min-height: 40px !important;
 }
+.page-user #block-views-6284cd50dbadf07d41f24330ac6c166a .views-row .field-content {
+  width: 100%!important;
+  float: left!important;
+}
 .page-user #block-views-4a1a47a0203ddfad93e1ff49963faae9 .block-title {
   background-image: url(../images/icones/icon-comunidades.png) !important;
   background-repeat: no-repeat;
