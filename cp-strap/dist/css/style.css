@@ -7906,3 +7906,7 @@ td.visible-print {
 .fa-plus-square-o:before {
   content: "\f196";
 }
+.cp-strap {
+  background: #eee;
+  padding: 20px;
+}
