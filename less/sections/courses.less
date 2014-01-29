@@ -316,11 +316,17 @@ body.inside-course {
 .node-course.node-teaser {
   background: none;
   border: none;
-  border-bottom: 1px solid @mainAreaBorder;
+  border-bottom: 1px solid @nodeTeaserBorderBottom;
 
   .rate-widget-love {
     position: inherit;
     margin-left: 7px;
+  }
+
+  .field-name-field-course-logo {
+    img {
+      .img-circle;
+    }
   }
 }
 
