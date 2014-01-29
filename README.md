@@ -12,3 +12,5 @@ http://drupal.org/node/1978010.
 
  - [Como usar](#como-usar)
  - [Estrutura](#estrutura)
+ - [Histórico](#histórico)
+
