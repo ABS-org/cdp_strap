@@ -12771,6 +12771,9 @@ fieldset[disabled] .field-name-group-group .field-item .unsubscribe.active {
 }
 .courses-list-page #main-content-inner {
   padding: 8px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
 }
 .courses-list-page #main-content-inner h1 {
   font-size: 18px;
