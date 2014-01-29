@@ -1,4 +1,4 @@
-cdp_strap
+cp-strap
 =========
 
 Tema com bootstrap da comunidade de praticas
