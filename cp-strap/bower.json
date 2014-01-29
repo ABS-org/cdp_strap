@@ -21,5 +21,8 @@
     "src/bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "devDependencies": {
+    "bootstrap": "~3.0.3"
+  }
 }
