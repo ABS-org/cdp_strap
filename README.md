@@ -36,6 +36,7 @@ cp-strap/
 
 ### Histórico
 
+Ver as [Releases](https://github.com/ABS-org/cdp_strap/releases).
 
 ## Copyright
 [MIT License](LICENSE) © ABS-org
