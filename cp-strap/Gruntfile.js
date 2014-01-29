@@ -20,6 +20,16 @@ module.exports = function (grunt) {
               ' * cp-strap theme v<%= pkg.version %>\n' +
               ' * License MIT <%= grunt.template.today("yyyy") %> ABS-org\n' +
               ' */\n',
+    
+    // Less task
+    //
+    less: {
+      compile: {
+        files: {
+          'dist/css/style.css': 'src/stylesheets/style.less'
+        }
+      }
+    },
 
   });
 
