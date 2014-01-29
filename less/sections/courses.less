@@ -24,13 +24,7 @@ body.node-type-course {
 
   }
 }
-body.page-courses {
-  #main-content-area {
-    h2 {
-      display: block;
-    }
-  }
-}
+
 body.page-courses-activities {
     #main-content-area {
       margin-top: 40px;
@@ -322,6 +316,7 @@ body.inside-course {
 .node-course.node-teaser {
   background: none;
   border: none;
+  border-bottom: 1px solid @mainAreaBorder;
 
   .rate-widget-love {
     position: inherit;
@@ -683,19 +678,8 @@ body.inside-course {
   }
 }
 ol.apachesolr_search-results {
-  background: #fff;
-  margin-top: -5px;
-  border-bottom: 1px solid #ddd;
   border-top: 1px solid #ddd;
-  padding: 0 14px 0 14px;
-  box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.08);
-  &:hover {
-    background: #f8f8f8;
-    box-shadow: inset 0 0 40px rgba(0, 0, 0, 0.1);
-    a {
-      text-decoration: none!important;
-    }
-  }
+
   h3.title {
     display: none;
   }
@@ -729,14 +713,7 @@ ol.apachesolr_search-results {
         margin-top: 5px;
         margin-left: 21%;
       }
-      .tags {
-        width: 350px;
-        height: 18px;
-        margin-left: 47%;
-        position: relative;
-        bottom: -48px;
-        background: #eee!important;
-      }
+
     }
   }
   .search-info {
