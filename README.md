@@ -18,6 +18,22 @@ http://drupal.org/node/1978010.
 
 ### Estrutura
 
+```
+cp-strap/
+├── demo/
+│   └── index.html
+├── dist/
+│   ├── css/
+│   ├── js/
+│   └── img/
+├── src/
+│   ├── stylesheets/
+│   ├── javascripts/
+│   └── images/
+└── drupal/
+    └── example.tpl.php
+```
+
 ### Histórico
 
 
