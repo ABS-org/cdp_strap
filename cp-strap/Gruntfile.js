@@ -32,6 +32,20 @@ module.exports = function (grunt) {
     },
 
     /************************************
+     * grunt-contrib-watch
+     * Watch some files and tasks
+     ************************************/
+    watch: {
+      stylesheets: {
+        files: '**/**/*.less',
+        tasks: ['less'],
+        options: {
+          livereload: true
+        }
+      }
+    },
+
+    /************************************
      * grunt-bump
      * Bump package version, create tag, commit, push...
      ************************************/
@@ -59,6 +73,9 @@ module.exports = function (grunt) {
 
   // CSS distribution task
   grunt.registerTask('dist-stylesheets', ['less', 'usebanner']);
+
+  // Default task
+  grunt.registerTask('default', ['watch']);
 
   // Use grunt-bump for changing version number
   grunt.loadNpmTasks('grunt-bump');
