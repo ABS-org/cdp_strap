@@ -16,6 +16,8 @@ http://drupal.org/node/1978010.
 
 ### Como usar
 
+Para visualizar os componentes do tema, basta navegar no diretório ```/demo``` após ter baixado o projeto. Para desenvolver, é preciso rodar o ```npm install``` para instalar os módulos do [Grunt](http://gruntjs.com/) e depois rodar a task default com o comando ```grunt```.
+
 ### Estrutura
 
 ```
