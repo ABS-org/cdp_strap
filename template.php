@@ -453,11 +453,13 @@ function _cdp_strap_set_submitted_text(&$variables){
     $breadcrumb_text = '';
 
     $node_type_info = node_type_get_type($variables['node']);
-    /*
+
     $lastTime = $variables['node']->changed;
     if(isset($variables['node']->last_comment_timestamp))
       if($variables['node']->changed < $variables['node']->last_comment_timestamp)
         $lastTime = $variables['node']->last_comment_timestamp;
+    /*
+
 
     $placeholders = array(
       '!type' => '<span class="node-content-type">' . check_plain($node_type_info->name) . '</span>',
@@ -523,6 +525,12 @@ function _cdp_strap_set_submitted_text(&$variables){
 
     }
 
+    $breadcrumb_text .= '<br> <span class="created-time">Ultima atividade a '.format_interval(REQUEST_TIME - $variables['node']->created).'</span> ';
+
+    if($lastTime)
+      $breadcrumb_text .= ', <span class="updated-time">Criado a '.format_interval(REQUEST_TIME - $lastTime).'</span>';
+
+    kpr($breadcrumb_text);
     $variables['submitted'] = $breadcrumb_text;
   }
 }
