@@ -692,7 +692,7 @@ function cdp_strap_menu_link__main_menu(&$variables) {
             <div class="view-submenu aba-pessoas">
               <div class="view-header">
                 <p>Solicitações de amizade</p>
-                <a href="/search/pessoas" class="btn btn-default btn-xs btn-block">Buscar Amigos</a>
+                <a href="/pessoas" class="btn btn-default btn-xs btn-block">Buscar Amigos</a>
               </div>
               <div class="view-content">
               ' . $unread_invitations_html . '
