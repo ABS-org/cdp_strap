@@ -145,6 +145,8 @@ function cdp_strap_preprocess_node(&$vars) {
     }
 
     if( $vars['type'] == 'course' ){
+      $vars['members_count'] = _cdp_courses_get_course_members_count($vars['nid']);
+
       if(isset( $vars['content']['field_og_subscribe_settings'][0]['#markup'] )){
         $vars['course_access'] = $vars['content']['field_og_subscribe_settings'][0]['#markup'];
       }
