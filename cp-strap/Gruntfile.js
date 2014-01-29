@@ -31,6 +31,26 @@ module.exports = function (grunt) {
       }
     },
 
+    /************************************
+     * grunt-bump
+     * Bump package version, create tag, commit, push...
+     ************************************/
+    bump: {
+      options: {
+        files: ['package.json', 'bower.json'],
+        updateConfigs: [],
+        commit: true,
+        commitMessage: 'v%VERSION%',
+        commitFiles: ['package.json', 'bower.json', 'dist/**/*'], // '-a' for all files
+        createTag: true,
+        tagName: 'v%VERSION%',
+        tagMessage: 'v%VERSION%',
+        push: true,
+        pushTo: 'master',
+        gitDescribeOptions: '--tags --always --abbrev=1 --dirty=-d' // options to use with '$ git describe'
+      }
+    }
+
   });
 
 
@@ -39,5 +59,8 @@ module.exports = function (grunt) {
 
   // CSS distribution task
   grunt.registerTask('dist-stylesheets', ['less', 'usebanner']);
+
+  // Use grunt-bump for changing version number
+  grunt.loadNpmTasks('grunt-bump');
 
 };
