@@ -9420,6 +9420,9 @@ div.quiz-report .dt div.quiz-report-score-container {
     }
     */
 }
+.node.node-post-image.node-teaser {
+  min-height: 340px;
+}
 .node.node-post-image.node-teaser .field-name-field-share-images .field-items .field-item {
   float: left;
   padding: 4px;
@@ -13153,12 +13156,6 @@ fieldset[disabled] .view-lista-cursos .view-content .views-row .row-footer .boto
   background-color: #f8f8f8!important;
   background-position: 10px 6px!important;
   border-radius: 5px 5px 0 0!important;
-}
-.page-courses #main-content-area {
-  background: #fff;
-  border: 1px solid #ddd;
-  border-radius: 6px!important;
-  padding: 0 0 50px 0!important;
 }
 .page-courses #main-content-area h2 {
   display: none;
