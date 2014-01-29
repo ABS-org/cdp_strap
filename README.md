@@ -1,4 +1,4 @@
-cp-strap
+cp-strap [![devDependency Status](https://david-dm.org/ABS-org/cdp_strap/dev-status.png)](https://david-dm.org/ABS-org/cdp_strap#info=devDependencies)
 =========
 
 Tema com bootstrap da comunidade de praticas
