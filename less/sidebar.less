@@ -1,4 +1,4 @@
-.region-two-33-66-first .pane-block {
+#block-cdp-courses-course-nav-menu {
   padding: 8px;
   margin: 0px 0px 15px 0px;
   background-color: #dceffc;
@@ -6,17 +6,19 @@
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
-  
+
   .course-nav-top-item {
     padding: 5px 10px;
     text-transform: uppercase;
     font-weight: bold;
     color: #1e73a8;
     border-bottom: 1px solid #e0e0e0;
-    
-    :before {
+
+    &:before {
+      font-family: 'FontAwesome';
       content: "\f115";
       color: #1e73a8;
+      margin-right: 5px;
     }
   }
   .course-nav {
