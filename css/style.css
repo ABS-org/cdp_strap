@@ -13191,6 +13191,7 @@ fieldset[disabled] .view-lista-cursos .view-content .views-row .row-footer .boto
 }
 .page-courses ol.apachesolr_search-results {
   border-top: 1px solid #ddd;
+  padding-left: 0px;
 }
 .page-courses ol.apachesolr_search-results h3.title {
   display: none;
