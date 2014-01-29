@@ -530,7 +530,6 @@ function _cdp_strap_set_submitted_text(&$variables){
     if($lastTime)
       $breadcrumb_text .= ', <span class="updated-time">Criado a '.format_interval(REQUEST_TIME - $lastTime).'</span>';
 
-    kpr($breadcrumb_text);
     $variables['submitted'] = $breadcrumb_text;
   }
 }
