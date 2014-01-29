@@ -37,4 +37,7 @@ module.exports = function (grunt) {
   // Load multiple grunt tasks using globbing patterns
   require('load-grunt-tasks')(grunt, {scope: 'devDependencies'});
 
+  // CSS distribution task
+  grunt.registerTask('dist-stylesheets', ['less', 'usebanner']);
+
 };
