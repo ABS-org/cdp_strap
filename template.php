@@ -145,6 +145,8 @@ function cdp_strap_preprocess_node(&$vars) {
     }
 
     if( $vars['type'] == 'course' ){
+      $vars['members_count'] = _cdp_courses_get_course_members_count($vars['nid']);
+
       if(isset( $vars['content']['field_og_subscribe_settings'][0]['#markup'] )){
         $vars['course_access'] = $vars['content']['field_og_subscribe_settings'][0]['#markup'];
       }
@@ -451,11 +453,13 @@ function _cdp_strap_set_submitted_text(&$variables){
     $breadcrumb_text = '';
 
     $node_type_info = node_type_get_type($variables['node']);
-    /*
+
     $lastTime = $variables['node']->changed;
     if(isset($variables['node']->last_comment_timestamp))
       if($variables['node']->changed < $variables['node']->last_comment_timestamp)
         $lastTime = $variables['node']->last_comment_timestamp;
+    /*
+
 
     $placeholders = array(
       '!type' => '<span class="node-content-type">' . check_plain($node_type_info->name) . '</span>',
@@ -520,6 +524,11 @@ function _cdp_strap_set_submitted_text(&$variables){
     else {
 
     }
+
+    $breadcrumb_text .= '<br> <span class="created-time">Ultima atividade a '.format_interval(REQUEST_TIME - $variables['node']->created).'</span> ';
+
+    if($lastTime)
+      $breadcrumb_text .= ', <span class="updated-time">Criado a '.format_interval(REQUEST_TIME - $lastTime).'</span>';
 
     $variables['submitted'] = $breadcrumb_text;
   }
@@ -690,7 +699,7 @@ function cdp_strap_menu_link__main_menu(&$variables) {
             <div class="view-submenu aba-pessoas">
               <div class="view-header">
                 <p>Solicitações de amizade</p>
-                <a href="/search/pessoas" class="btn btn-default btn-xs btn-block">Buscar Amigos</a>
+                <a href="/pessoas" class="btn btn-default btn-xs btn-block">Buscar Amigos</a>
               </div>
               <div class="view-content">
               ' . $unread_invitations_html . '

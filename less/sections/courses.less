@@ -24,13 +24,7 @@ body.node-type-course {
 
   }
 }
-body.page-courses {
-  #main-content-area {
-    h2 {
-      display: block;
-    }
-  }
-}
+
 body.page-courses-activities {
     #main-content-area {
       margin-top: 40px;
@@ -322,16 +316,26 @@ body.inside-course {
 .node-course.node-teaser {
   background: none;
   border: none;
+  border-bottom: 1px solid @nodeTeaserBorderBottom;
 
   .rate-widget-love {
     position: inherit;
     margin-left: 7px;
+  }
+
+  .field-name-field-course-logo {
+    img {
+      .img-circle;
+    }
   }
 }
 
 .courses-list-page {
   #main-content-inner {
     padding: 8px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
 
     h1 {
       .course-page-titles('../images/demais/cursos.png');
@@ -643,15 +647,12 @@ body.inside-course {
 
 .page-courses {
   #main-content-area {
-  background: #fff;
-  border: 1px solid #ddd;
-  border-radius: 6px!important;
-  padding: 0 0 50px 0!important;
+
   h2 {
     display: none;
   }
   .page-header {
-    height: 40px;
+    height: 45px;
     margin-bottom: 10px;
     padding-left: 40px;
     padding-top: 10px;
@@ -683,19 +684,9 @@ body.inside-course {
   }
 }
 ol.apachesolr_search-results {
-  background: #fff;
-  margin-top: -5px;
-  border-bottom: 1px solid #ddd;
   border-top: 1px solid #ddd;
-  padding: 0 14px 0 14px;
-  box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.08);
-  &:hover {
-    background: #f8f8f8;
-    box-shadow: inset 0 0 40px rgba(0, 0, 0, 0.1);
-    a {
-      text-decoration: none!important;
-    }
-  }
+  padding-left: 0px;
+
   h3.title {
     display: none;
   }
@@ -717,26 +708,16 @@ ol.apachesolr_search-results {
   .row-footer {
     .botoes {
       margin-top: 8px;
-      width: 210px;
-      clear: left!important;
+      margin-right: 10px;
       position: relative;
-      left: 20%;
     }
     .outras-infos {
       .tipo-curso {
         color: #999;
         float: left;
         margin-top: 5px;
-        margin-left: 21%;
       }
-      .tags {
-        width: 350px;
-        height: 18px;
-        margin-left: 47%;
-        position: relative;
-        bottom: -48px;
-        background: #eee!important;
-      }
+
     }
   }
   .search-info {
