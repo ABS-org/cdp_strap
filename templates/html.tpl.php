@@ -10,7 +10,6 @@
   <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
-  <?php print $scripts; ?>
 </head>
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>
   <div id="skip-link">
@@ -30,5 +29,9 @@
   <?php print $page_bottom; ?>
 
   <div id="help-modal-info" class="modal" tabindex="-1" role="dialog" aria-labelledby="help-modal-info" aria-hidden="true"></div><!-- /.modal -->
+
+  <!-- Scripts at bottom of page for fast loading -->
+  <?php print $scripts; ?>
+  
 </body>
 </html>
