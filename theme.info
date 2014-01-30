@@ -23,7 +23,7 @@ regions[sidebar_second] = 'Secondary'
 regions[footer]         = 'Footer'
 
 ; Stylesheets
-stylesheets[all][] = css/style.css
+stylesheets[all][] = css/styles.min.css
 
 settings[bootstrap_tooltip_descriptions] = 0
 
