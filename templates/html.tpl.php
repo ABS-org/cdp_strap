@@ -37,8 +37,6 @@
     <?php print $page; ?>
     <?php print $page_bottom; ?>
 
-    <div id="help-modal-info" class="modal" tabindex="-1" role="dialog" aria-labelledby="help-modal-info" aria-hidden="true"></div><!-- /.modal -->
-
     <!-- Scripts at bottom of page for fast loading -->
     <?php print $scripts; ?>
 
