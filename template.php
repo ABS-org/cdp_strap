@@ -528,10 +528,10 @@ function _cdp_strap_set_submitted_text(&$variables){
     $breadcrumb_text .= '<br> ';
 
     if($lastTime)
-      $breadcrumb_text .= '<span class="updated-time">Ultima atividade a '.format_interval(REQUEST_TIME - $lastTime).'</span> ';
+      $breadcrumb_text .= '<span class="updated-time">Ultima atividade há '.format_interval(REQUEST_TIME - $lastTime).'</span> ';
 
 
-    $breadcrumb_text .= '<span class="created-time">Criado a '.format_interval(REQUEST_TIME - $variables['node']->created).'</span>';
+    $breadcrumb_text .= '<span class="created-time">Criado há '.format_interval(REQUEST_TIME - $variables['node']->created).'</span>';
 
     $variables['submitted'] = $breadcrumb_text;
   }
