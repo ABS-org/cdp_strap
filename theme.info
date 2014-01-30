@@ -1,5 +1,5 @@
-name = cdp_strap
-description = O tema da comunidade de praticas com bootstrap
+name = cp-strap
+description = Tema com bootstrap da Comunidade de Práticas
 core = 7.x
 base theme = bootstrap
 
