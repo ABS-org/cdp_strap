@@ -64,4 +64,4 @@ settings[cdn_bootstrap] = 0
 ; ;settings[toggle_name] = 0
 ; ;settings[toggle_search] = 1
 ; ;settings[cdn_bootstrap] = 1
-; ;settings[cdn_bootstrap_version] = 2.3.2
+; ;settings[cdn_bootstrap_version] = 3.0.3
