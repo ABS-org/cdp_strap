@@ -10070,7 +10070,18 @@ body.node-type-relato-de-experi-ncia-dab-curado .content .field-name-field-image
   width: 100%;
   height: auto;
 }
-.block-poll .poll > .title {
+.node-poll .field-type-text-with-summary {
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+.block-poll > div.links {
+  border-top: 1px solid #ccc;
+}
+.block-poll > div.links > ul {
+  padding-left: 0px;
+  list-style: none;
+}
+.poll > .title {
   font-size: 16px;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -10078,11 +10089,11 @@ body.node-type-relato-de-experi-ncia-dab-curado .content .field-name-field-image
   font-weight: bold;
   padding: 5px;
 }
-.block-poll .poll > .text > .percent {
+.poll > .text > .percent {
   float: right;
   font-weight: normal;
 }
-.block-poll .poll > .bar {
+.poll > .bar {
   overflow: hidden;
   height: 20px;
   margin-bottom: 20px;
@@ -10094,7 +10105,7 @@ body.node-type-relato-de-experi-ncia-dab-curado .content .field-name-field-image
   margin-top: 5px;
   margin-bottom: 15px;
 }
-.block-poll .poll > .bar > div {
+.poll > .bar > div {
   float: left;
   width: 0%;
   height: 100%;
@@ -10108,15 +10119,58 @@ body.node-type-relato-de-experi-ncia-dab-curado .content .field-name-field-image
   -webkit-transition: width 0.6s ease;
   transition: width 0.6s ease;
 }
-.block-poll .poll > .total {
+.poll > .total {
   font-style: italic;
 }
-.block-poll > div.links {
-  border-top: 1px solid #ccc;
+.poll > .vote-form > .choices {
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 10px;
 }
-.block-poll > div.links > ul {
-  padding-left: 0px;
-  list-style: none;
+.poll > .vote-form > .choices .form-radios {
+  padding: 3px 7px;
+  border: 1px dashed #ccc;
+  border-radius: 7px;
+  border-left: 0px;
+  border-right: 0px;
+  margin-top: 20px;
+}
+.poll > .vote-form > #edit-vote {
+  color: #ffffff;
+  background-color: #428bca;
+  border-color: #357ebd;
+}
+.poll > .vote-form > #edit-vote:hover,
+.poll > .vote-form > #edit-vote:focus,
+.poll > .vote-form > #edit-vote:active,
+.poll > .vote-form > #edit-vote.active,
+.open .dropdown-toggle.poll > .vote-form > #edit-vote {
+  color: #ffffff;
+  background-color: #3276b1;
+  border-color: #285e8e;
+}
+.poll > .vote-form > #edit-vote:active,
+.poll > .vote-form > #edit-vote.active,
+.open .dropdown-toggle.poll > .vote-form > #edit-vote {
+  background-image: none;
+}
+.poll > .vote-form > #edit-vote.disabled,
+.poll > .vote-form > #edit-vote[disabled],
+fieldset[disabled] .poll > .vote-form > #edit-vote,
+.poll > .vote-form > #edit-vote.disabled:hover,
+.poll > .vote-form > #edit-vote[disabled]:hover,
+fieldset[disabled] .poll > .vote-form > #edit-vote:hover,
+.poll > .vote-form > #edit-vote.disabled:focus,
+.poll > .vote-form > #edit-vote[disabled]:focus,
+fieldset[disabled] .poll > .vote-form > #edit-vote:focus,
+.poll > .vote-form > #edit-vote.disabled:active,
+.poll > .vote-form > #edit-vote[disabled]:active,
+fieldset[disabled] .poll > .vote-form > #edit-vote:active,
+.poll > .vote-form > #edit-vote.disabled.active,
+.poll > .vote-form > #edit-vote[disabled].active,
+fieldset[disabled] .poll > .vote-form > #edit-vote.active {
+  background-color: #428bca;
+  border-color: #357ebd;
 }
 .node-avaliacao-do-curso .webform-component {
   padding: 10px;

@@ -1,41 +1,74 @@
 
-.block-poll {
-  .poll {
-    > .title {
-      font-size: 16px;
-      margin-top: 10px;
-      margin-bottom: 10px;
-      line-height: 20px;
-      font-weight: bold;
-      padding: 5px;
-    }
-
-    > .text {
-
-      > .percent {
-        float: right;
-        font-weight: normal;
-      }
-    }
-
-    > .bar {
-      .progress;
-
-      margin-top: 5px;
-      margin-bottom: 15px;
-      > div {
-        .progress-bar;
-      }
-    }
-    > .total {
-      font-style: italic;
-    }
+.node-poll {
+  .field-type-text-with-summary {
+    margin-top: 15px;
+    margin-bottom: 20px;
   }
+}
+
+.block-poll {
+
   > div.links {
     border-top: 1px solid #ccc;
     > ul {
       padding-left: 0px;
       list-style: none;
+    }
+  }
+}
+
+.poll {
+  > .title {
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: 20px;
+    font-weight: bold;
+    padding: 5px;
+  }
+
+  > .text {
+
+    > .percent {
+      float: right;
+      font-weight: normal;
+    }
+  }
+
+  > .bar {
+    .progress;
+
+    margin-top: 5px;
+    margin-bottom: 15px;
+    > div {
+      .progress-bar;
+    }
+  }
+  > .total {
+    font-style: italic;
+  }
+
+
+  > .vote-form {
+
+    > .choices {
+      font-size: 16px;
+      line-height: 20px;
+      margin-bottom: 10px;
+
+      .form-radios {
+
+        padding: 3px 7px;
+        border: 1px dashed #ccc;
+        border-radius: 7px;
+        border-left: 0px;
+        border-right: 0px;
+        margin-top: 20px;
+      }
+    }
+
+    > #edit-vote {
+      .btn-primary;
     }
   }
 }
