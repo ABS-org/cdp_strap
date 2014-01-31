@@ -6969,6 +6969,18 @@ form.node-form {
 .checkbox input[type="checkbox"],
 .checkbox-inline input[type="checkbox"] {
   float: none;
+  margin-left: 0px;
+}
+.radio,
+.checkbox {
+  min-height: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 0px;
+  vertical-align: middle;
+}
+.checkbox {
+  display: table-cell;
 }
 .file-widget input.form-file {
   margin: 5px 0 15px;
@@ -10016,6 +10028,29 @@ body.node-type-relato-de-experi-ncia-dab-curado .content .field-name-field-image
 body.node-type-relato-de-experi-ncia-dab-curado .content .field-name-field-imagem .field-items .field-item img {
   width: 100%;
   height: auto;
+}
+.node-avaliacao-do-curso .webform-component {
+  padding: 10px;
+  background-color: aliceblue;
+  border: 1px solid #ddd;
+  border-radius: 7px;
+  margin: 15px 0px;
+}
+.node-avaliacao-do-curso .webform-component > label {
+  font-size: 22px;
+  border-bottom: 1px;
+  margin: 10px 5px;
+}
+.node-avaliacao-do-curso table.sticky-header thead tr th.webform-grid-option {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.node-avaliacao-do-curso table.webform-grid > tbody > tr:hover > td {
+  background-color: #fff;
+}
+.node-avaliacao-do-curso table.webform-grid > tbody > tr > td {
+  vertical-align: middle;
+  font-size: 16px;
 }
 body.page-comunidades .pane-commons-groups-commons-groups-create-group {
   background-color: inherit;
@@ -13160,7 +13195,7 @@ fieldset[disabled] .view-lista-cursos .view-content .views-row .row-footer .boto
   background-position: 10px 6px!important;
   border-radius: 5px 5px 0 0!important;
 }
-.page-courses #main-content-area h2 {
+.page-courses #main-content-area > h2 {
   display: none;
 }
 .page-courses #main-content-area .page-header {

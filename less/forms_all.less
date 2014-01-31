@@ -87,8 +87,22 @@ form.node-form {
 .radio-inline input[type="radio"],
 .checkbox input[type="checkbox"],
 .checkbox-inline input[type="checkbox"] {
-    float: none;
+  float: none;
+  margin-left: 0px;
 }
+
+.radio, .checkbox {
+  min-height: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 0px;
+  vertical-align: middle;
+}
+
+
+ .checkbox {
+  display: table-cell;
+ }
 
 .file-widget {
   input.form-file {
