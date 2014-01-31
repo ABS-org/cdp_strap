@@ -1,6 +1,6 @@
 {
   "name": "cp-strap",
-  "version": "0.0.18",
+  "version": "0.0.2",
   "description": "Tema com bootstrap da Comunidade de Práticas",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
