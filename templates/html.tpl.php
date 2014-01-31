@@ -24,14 +24,9 @@
     <div id="skip-link">
       <a href="#main-content" class="element-invisible element-focusable"><?php print t('Skip to main content'); ?></a>
     </div>
-    <div id="barra-brasil">
-        <div class="barra">
-            <ul>
-                <li><a target="_blank" title="Acesso à informação" class="ai" href="http://www.acessoainformacao.gov.br">www.sic.gov.br</a></li>
-                <li><a target="_blank" title="Portal de Estado do Brasil" class="brasilgov" href="http://www.brasil.gov.br">www.brasil.gov.br</a></li>
-            </ul>
-        </div>
-    </div>
+
+    <!-- Include Barra do Governo do Brasil -->
+    <?php include 'includes/bar-top-brasilgov.php'; ?>
 
     <?php print $page_top; ?>
     <?php print $page; ?>
