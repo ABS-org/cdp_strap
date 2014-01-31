@@ -4,64 +4,6 @@
  * CSS para as buscas e o apachesolr
  */
 
-.block-facetapi {
-  font-weight: bold;
-
-  h2.block-title {
-    margin-left: 0px;
-    padding-left: 43px;
-    min-height: 40px;
-    background-image: url('../images/icones/icon-small-filter.png');
-    background-repeat:  no-repeat;
-    background-position: 10px 10px!important;
-    font-size: 16px;
-    color: @blueDark;
-    text-transform: none;
-    border: 0px;
-  }
-
-  ul.facetapi-facetapi-checkbox-links {
-    padding-left: 0px;
-    padding-top: 7px;
-
-    li {
-      margin: 2px 0;
-      min-height: 32px;
-
-      a {
-        color: #fff;
-        background-color: @blueDark;
-
-        .rounded-corners(5px);
-        display: inline;
-        padding: 5px 10px;
-
-        line-height: 31px;
-
-      }
-
-      input {
-        float: left;
-        margin-right: 5px;
-        margin-left: 5px;
-        margin-top: 6px;
-      }
-    }
-  }
-
-  a.facetapi-limit-link {
-    display: block;
-    padding-left: 25px;
-    background: url('../images/icones/filtro_icone_mais.png') no-repeat 3px center;
-
-    margin-bottom: 5px;
-    text-decoration: underline;
-
-    &.open {
-      background: url('../images/icones/filtro_icone_menos.png') no-repeat left center;
-    }
-  }
-}
 
 
 body.page-relatos,
@@ -88,9 +30,7 @@ body.page-search {
     .region-content {
       background: none repeat scroll 0 0 #FFFFFF;
       padding: 10px 15px;
-      border-left: 1px solid #ddd;
-      border-right: 1px solid #ddd;
-      border-bottom: 1px solid #ddd;
+      border: 1px solid @mainAreaBorder;
 
       #block-system-main {
         & > h2 {

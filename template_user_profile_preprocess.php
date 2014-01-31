@@ -15,6 +15,10 @@ function cdp_strap_preprocess_user_profile(&$variables){
   if(isset($variables['view_mode']))
     $variables['theme_hook_suggestions'][] = 'user_profile__' . $variables['view_mode'];
 
+  if(arg(1) == 'pessoas'){
+    $variables['theme_hook_suggestions'][] = 'user_profile__search_results';
+  }
+
   if(isset($variables['elements']['#view_mode'] ))
     $variables['theme_hook_suggestions'][] = 'user_profile__' . $variables['elements']['#view_mode'];
 
@@ -64,5 +68,11 @@ function cdp_strap_preprocess_user_profile(&$variables){
     '<a class="user-profile-picture" title="'. $user->realname .'" href="'. url('user/' . $user->uid) .'">
       '. render($avatar) .'
     </a>';
+
+  if(!isset($variables['user_profile']['username'])){
+    $variables['user_profile']['username'] = '<h4><a class="username" title="'. $user->realname .'" href="'. url('user/' . $user->uid) .'">';
+    $variables['user_profile']['username'] .= $user->realname;
+    $variables['user_profile']['username'] .= '</a></h4>';
+  }
 
 }

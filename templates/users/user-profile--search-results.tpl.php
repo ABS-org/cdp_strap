@@ -1,5 +1,5 @@
 
-<div class="profile"<?php print $attributes; ?>>
+<div class="profile small"<?php print $attributes; ?>>
   <div class="row">
     <div class="col-md-3 user-profile-row1-left">
 

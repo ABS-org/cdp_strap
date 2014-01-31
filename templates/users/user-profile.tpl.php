@@ -1,5 +1,5 @@
 
-<div class="profile"<?php print $attributes; ?>>
+<div class="profile full"<?php print $attributes; ?>>
   <div class="row">
     <div class="col-md-3 user-profile-row1-left">
 
@@ -7,7 +7,7 @@
 
       <?php print render($user_profile['field_formacao_profissional']); ?>
 
-			<?php print render($user_profile['field_cidade']); ?>      
+			<?php print render($user_profile['field_cidade']); ?>
 
  			<div class="user-profile-links-redes-sociais">
         <?php if ($facebook_url): ?>
@@ -38,11 +38,11 @@
 
     <div class="col-md-9 user-profile-row1-right">
       <div id="names">
-      <?php if (isset($user_profile['field_name_first'][0]['#markup']) && isset($user_profile['field_name_last'][0]['#markup'])): ?>  
+      <?php if (isset($user_profile['field_name_first'][0]['#markup']) && isset($user_profile['field_name_last'][0]['#markup'])): ?>
         <h1 class="tituloPagina"><?php print $user_profile['field_name_first'][0]['#markup']; ?> <?php print $user_profile['field_name_last'][0]['#markup']; ?></h1>
       <?php endif; ?>
       </div>
-      <div id="field-bio" class="block">   
+      <div id="field-bio" class="block">
         <?php print render($user_profile['field_bio']); ?>
       </div>
       <div class="interesses">

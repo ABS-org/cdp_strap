@@ -1,5 +1,5 @@
-body.page-comunidades,
-body.og-context-node {
+// Com apachesolr
+body.page-comunidades {
 
 	#main-content-area {
 		.region-content {
@@ -22,54 +22,12 @@ body.og-context-node {
 				}
 			}
 			padding: 0!important;
-			ol.apachesolr_search-results,
 			#quicktabs-container-cdp_group_activity {
-				background: transparent!important;
-				list-style: none!important;
-				padding: 0!important;
-				.content {
-					p {
-						font-style: italic;
-					}
-				}
-				li {
-					h3.title {
-						display: none!important;
-					}
-					box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.1);
-					background: #fff;
-					border-bottom: 1px solid #ddd;
-					padding: 0 18px!important;
-					&:hover {
-						background: #f8f8f8;
-					}
-					.field-name-field-group-logo {
-						img {
-							.img-circle;
-							margin-right: 20px;
-						}
-					}
-					.node {
-						border: none;
-					}
 
-					.node-links-container {
-						display: none;
-					}
 
-					.search-snippet-info {
-						padding: 0!important;
-						.search-info {
-							display: none;
-						}
-					}
-				}
 			}
 		}
-
-
 	}
-
 	.region-sidebar-first {
 		margin-top: 10px;
 		#block-block-10 {
@@ -90,4 +48,39 @@ body.og-context-node {
 			}
 		}
 	}
+}
+
+// com search API
+
+.view.comunidades {
+  > .view-header {
+    text-align: right;
+    font-size: 12px;
+  }
+
+  > .view-content {
+
+		background: transparent;
+		list-style: none;
+		padding: 0;
+		margin-top: 10px;
+
+    > .views-row {
+    	margin-top: 0px;
+			h3.title {
+				display: none;
+			}
+
+			padding: 0 18px;
+
+
+			.search-snippet-info {
+				padding: 0!important;
+				.search-info {
+					display: none;
+				}
+			}
+
+    }
+  }
 }
