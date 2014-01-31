@@ -1,0 +1,41 @@
+
+.block-poll {
+  .poll {
+    > .title {
+      font-size: 16px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      line-height: 20px;
+      font-weight: bold;
+      padding: 5px;
+    }
+
+    > .text {
+
+      > .percent {
+        float: right;
+        font-weight: normal;
+      }
+    }
+
+    > .bar {
+      .progress;
+
+      margin-top: 5px;
+      margin-bottom: 15px;
+      > div {
+        .progress-bar;
+      }
+    }
+    > .total {
+      font-style: italic;
+    }
+  }
+  > div.links {
+    border-top: 1px solid #ccc;
+    > ul {
+      padding-left: 0px;
+      list-style: none;
+    }
+  }
+}

@@ -5905,14 +5905,38 @@ td.visible-print {
   border-radius: 5px;
 }
 .block-title {
-  border-bottom: 1px solid #E0E0E0;
+  border-bottom: 2px solid #dddddd;
+  border-radius: 5px 5px 0 0;
   color: #999999;
   font-weight: bold;
-  padding: 5px 15px;
+  padding: 13px 10px  5px;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 1.15em;
   width: 100%;
   margin: 5px;
+  margin-bottom: 10px;
+  background-position: 10px 6px;
+  /*
+  padding: 16px 0 16px 54px!important;
+  font-weight: bold!important;
+  font-size: 1.15em!important;
+  border-bottom: 2px solid #dddddd!important;
+  background-color: #f8f8f8!important;
+  background-position: 10px 6px!important;
+  border-radius: 5px 5px 0 0!important;
+  */
+  /*
+      min-height: 30px!important;
+      overflow: visible!important;
+      border-radius: 3px 3px 0 0!important;
+
+      background-color: #e2e5e7!important;
+      border: none!important;
+      border-bottom: 1px solid #eee!important;
+      margin-left: 0;
+      color: #1581ca;
+      font-size: 0.9em!important;
+  */
 }
 .btn-users {
   background: #0088cc;
@@ -7160,14 +7184,18 @@ form.node-form {
 .region-sidebar-first .pane-block #edit-field-thematic-area-course-tid-wrapper label,
 .region-two-66-33-second .pane-block #edit-field-thematic-area-course-tid-wrapper label,
 .region-two-33-66-first .pane-block #edit-field-thematic-area-course-tid-wrapper label {
-  border-bottom: 1px solid #E0E0E0;
+  border-bottom: 2px solid #dddddd;
+  border-radius: 5px 5px 0 0;
   color: #999999;
   font-weight: bold;
-  padding: 5px 15px;
+  padding: 13px 10px  5px;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 1.15em;
   width: 100%;
   margin: 5px;
+  margin-bottom: 10px;
+  background-position: 10px 6px;
+  /*
   padding: 16px 0 16px 54px!important;
   font-weight: bold!important;
   font-size: 1.15em!important;
@@ -7175,6 +7203,19 @@ form.node-form {
   background-color: #f8f8f8!important;
   background-position: 10px 6px!important;
   border-radius: 5px 5px 0 0!important;
+  */
+  /*
+      min-height: 30px!important;
+      overflow: visible!important;
+      border-radius: 3px 3px 0 0!important;
+
+      background-color: #e2e5e7!important;
+      border: none!important;
+      border-bottom: 1px solid #eee!important;
+      margin-left: 0;
+      color: #1581ca;
+      font-size: 0.9em!important;
+  */
 }
 .region-sidebar-first {
   margin-top: 0px;
@@ -10029,6 +10070,54 @@ body.node-type-relato-de-experi-ncia-dab-curado .content .field-name-field-image
   width: 100%;
   height: auto;
 }
+.block-poll .poll > .title {
+  font-size: 16px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  line-height: 20px;
+  font-weight: bold;
+  padding: 5px;
+}
+.block-poll .poll > .text > .percent {
+  float: right;
+  font-weight: normal;
+}
+.block-poll .poll > .bar {
+  overflow: hidden;
+  height: 20px;
+  margin-bottom: 20px;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+.block-poll .poll > .bar > div {
+  float: left;
+  width: 0%;
+  height: 100%;
+  font-size: 12px;
+  color: #ffffff;
+  text-align: center;
+  background-color: #428bca;
+  -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+  -webkit-transition: width 0.6s ease;
+  transition: width 0.6s ease;
+}
+.block-poll .poll > .total {
+  font-style: italic;
+}
+.block-poll > div.links {
+  border-top: 1px solid #ccc;
+}
+.block-poll > div.links > ul {
+  padding-left: 0px;
+  list-style: none;
+}
 .node-avaliacao-do-curso .webform-component {
   padding: 10px;
   background-color: aliceblue;
@@ -11358,7 +11447,6 @@ body.user-block-expandable-show .region-user-side-block .glyphicon-user-block:be
   min-height: 30px!important;
   overflow: visible!important;
   border-radius: 3px 3px 0 0!important;
-  text-shadow: 1px 1px 1px #fff;
   background-color: #e2e5e7!important;
   border: none!important;
   border-bottom: 1px solid #eee!important;
@@ -11651,11 +11739,12 @@ body.user-block-expandable-show .region-user-side-block .glyphicon-user-block:be
   min-height: 30px!important;
   overflow: visible!important;
   border-radius: 3px 3px 0 0!important;
-  text-shadow: 1px 1px 1px #fff;
+  text-align: center;
   background-color: #e2e5e7!important;
   border: none!important;
   border-bottom: 1px solid #eee!important;
   margin-left: 0;
+  padding: 16px 0;
   color: #1581ca;
   font-size: 0.9em!important;
 }
@@ -13185,15 +13274,6 @@ fieldset[disabled] .view-lista-cursos .view-content .views-row .row-footer .boto
 .facetapi-checkbox-processed {
   background: transparent!important;
   color: #1481ca!important;
-}
-.block-title {
-  padding: 16px 0 16px 54px!important;
-  font-weight: bold!important;
-  font-size: 1.15em!important;
-  border-bottom: 2px solid #dddddd!important;
-  background-color: #f8f8f8!important;
-  background-position: 10px 6px!important;
-  border-radius: 5px 5px 0 0!important;
 }
 .page-courses #main-content-area > h2 {
   display: none;
