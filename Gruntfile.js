@@ -28,6 +28,11 @@ module.exports = function (grunt) {
         files: {
           'cp-strap/dist/css/style.css': 'cp-strap/src/stylesheets/build.less'
         }
+      },
+      website: {
+        files: {
+          'cp-strap/dist/website/css/style.css': 'cp-strap/src/website/stylesheets/build.less'
+        }
       }
     },
 
