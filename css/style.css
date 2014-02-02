@@ -9849,6 +9849,28 @@ body.node-type-relato-de-curadoria .content .field-name-field-imagem-curadoria .
   width: 100%;
   height: auto;
 }
+.node-teaser.node-relato-de-curadoria .field-type-image img {
+  width: 160px;
+  height: 145px;
+  margin: 0px 5px 6px 0px;
+  border-radius: 50%;
+}
+.node-teaser.node-relato-de-curadoria .field-type-text-long {
+  font-size: 16px;
+}
+.node-teaser.node-relato-de-curadoria > h2 {
+  display: none;
+}
+.node-teaser.node-relato-de-curadoria .field-name-title-field h2 {
+  margin-top: 0px;
+  font-size: 22px;
+}
+.node-teaser.node-relato-de-curadoria .field-name-title-field h2 a {
+  color: #298dc8;
+}
+.node-teaser.node-relato-de-curadoria .dados-da-experiencia {
+  display: none;
+}
 /**
  * @file
  * CSS para o tipo de conteúdo relato dos profissionais do DAB relato_de_experi_ncia_dab_curado
@@ -10156,6 +10178,28 @@ body.node-type-relato-de-experi-ncia-dab-curado .content .field-name-field-image
 body.node-type-relato-de-experi-ncia-dab-curado .content .field-name-field-imagem .field-items .field-item img {
   width: 100%;
   height: auto;
+}
+.node-teaser.node-type-relato-de-experi-ncia-dab-curado .field-type-image img {
+  width: 160px;
+  height: 145px;
+  margin: 0px 5px 6px 0px;
+  border-radius: 50%;
+}
+.node-teaser.node-type-relato-de-experi-ncia-dab-curado .field-type-text-long {
+  font-size: 16px;
+}
+.node-teaser.node-type-relato-de-experi-ncia-dab-curado > h2 {
+  display: none;
+}
+.node-teaser.node-type-relato-de-experi-ncia-dab-curado .field-name-title-field h2 {
+  margin-top: 0px;
+  font-size: 22px;
+}
+.node-teaser.node-type-relato-de-experi-ncia-dab-curado .field-name-title-field h2 a {
+  color: #298dc8;
+}
+.node-teaser.node-type-relato-de-experi-ncia-dab-curado .dados-da-experiencia {
+  display: none;
 }
 .node-poll .field-type-text-with-summary {
   margin-top: 15px;

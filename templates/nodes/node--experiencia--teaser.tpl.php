@@ -1,9 +1,3 @@
-<?php
-
-$relato_link = url(drupal_get_path_alias('node/' . $node->nid), array('absolute' => TRUE));
-
-?>
-
 <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
 
   <div class="cabecalho">
