@@ -37,6 +37,21 @@ module.exports = function (grunt) {
     },
 
     /************************************
+     * grunt-contrib-concat
+     * Concat javascripts and other files
+     ************************************/
+    concat: {
+      javascripts: {
+        src: [
+          'cp-strap/src/website/javascripts/classie.js',
+          'cp-strap/src/website/javascripts/nav-horizontal.js',
+          'cp-strap/src/website/javascripts/main.js'
+        ],
+        dest: 'cp-strap/dist/website/js/main.js'
+      }
+    },
+
+    /************************************
      * grunt-contrib-watch
      * Watch some files and tasks
      ************************************/
@@ -81,6 +96,9 @@ module.exports = function (grunt) {
 
   // Load multiple grunt tasks using globbing patterns
   require('load-grunt-tasks')(grunt, {scope: 'devDependencies'});
+
+  // JS distribution task.
+  grunt.registerTask('dist-javascripts', ['concat']);
 
   // CSS distribution task
   grunt.registerTask('dist-stylesheets', ['less', 'usebanner']);
