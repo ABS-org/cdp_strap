@@ -26,7 +26,7 @@ module.exports = function (grunt) {
     less: {
       compile: {
         files: {
-          'dist/css/style.css': 'src/stylesheets/build.less'
+          'cp-strap/dist/css/style.css': 'cp-strap/src/stylesheets/build.less'
         }
       }
     },
