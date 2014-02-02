@@ -1,0 +1,7 @@
+name: cp-strap
+markdown: redcarpet
+pygments: true
+baseurl: /cdp_strap
+
+# Permalinks
+permalink: pretty
