@@ -42,13 +42,13 @@ module.exports = function (grunt) {
      ************************************/
     watch: {
       html: {
-        files: '**/**/*.html',
+        files: 'cp-strap/**/*.html',
         options: {
           livereload: true
         }
       },
       stylesheets: {
-        files: '**/**/*.less',
+        files: 'cp-strap/src/**/*.less',
         tasks: ['less'],
         options: {
           livereload: true
