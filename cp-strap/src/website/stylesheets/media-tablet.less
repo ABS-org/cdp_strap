@@ -1,0 +1,49 @@
+@media screen and (max-width: 43em) { 
+
+  .nav-horizontal {
+    font-size: 120%;
+    border: none;
+    > ul,
+    .nav-horizontal-submenu-inner {
+      width: 100%;
+      padding: 0;
+    }
+    .nav-horizontal-submenu-inner {
+      padding: 0 2em;
+      font-size: 75%;
+    }
+    .nav-horizontal-submenu { 
+      position: relative;
+      .menu-title {
+        padding-top: 0.6em;
+      }
+    }
+    > ul > li {
+      display: block;
+      border-bottom: 1px solid #ddd;
+      > a { 
+        display: block;
+        padding: 1em 3em;
+      }
+      &:hover {
+        background: #f9f9f9;
+      }
+      &.nav-atoms {
+        border-left: 8px solid @color-red;
+      }
+      &.nav-molecules {
+        border-left: 8px solid @color-yellow;
+      }
+      &.nav-organisms {
+        border-left: 8px solid @color-green;
+      }
+      &.nav-templates {
+        border-left: 8px solid @color-blue;
+      }
+      &.nav-devices {
+        border-left: 8px solid #555;
+      }
+    }
+  }
+
+}
